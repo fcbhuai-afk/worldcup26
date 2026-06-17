@@ -202,6 +202,11 @@ button:hover {
   background: #fff;
 }
 
+.match-card.focus-match {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(10, 107, 97, 0.13);
+}
+
 .match-meta {
   color: var(--muted);
   font-size: 13px;
