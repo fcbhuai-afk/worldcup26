@@ -4,6 +4,7 @@ const state = {
   group: "all",
   status: "all",
   query: "",
+  didInitialJump: false,
 };
 
 const stageNames = {
@@ -186,7 +187,10 @@ function matchPassesFilters(match) {
 }
 
 function renderMatches() {
-  const matches = data.matches.filter(matchPassesFilters);
+  const matches = data.matches
+    .filter(matchPassesFilters)
+    .slice()
+    .sort((a, b) => new Date(a.kickoff_beijing) - new Date(b.kickoff_beijing));
   el("resultHint").textContent = `当前显示 ${matches.length} 场。`;
 
   if (!matches.length) {
@@ -195,6 +199,33 @@ function renderMatches() {
   }
 
   el("matches").innerHTML = matches.map(renderMatchCard).join("");
+  jumpToCurrentMatch(matches);
+}
+
+function findCurrentMatch(matches) {
+  const live = matches.find((match) => match.status_state === "in");
+  if (live) return live;
+
+  const now = new Date();
+  const upcoming = matches.find((match) => new Date(match.kickoff_beijing) >= now);
+  if (upcoming) return upcoming;
+
+  return matches[matches.length - 1];
+}
+
+function jumpToCurrentMatch(matches) {
+  if (state.didInitialJump || state.stage !== "all" || state.group !== "all" || state.status !== "all" || state.query) {
+    return;
+  }
+  state.didInitialJump = true;
+  const current = findCurrentMatch(matches);
+  if (!current) return;
+  const target = document.getElementById(`match-${current.match_number}`);
+  if (!target) return;
+  target.classList.add("focus-match");
+  window.setTimeout(() => {
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, 250);
 }
 
 function renderMatchCard(match) {
@@ -213,7 +244,7 @@ function renderMatchCard(match) {
   const awayTeamUrl = teamUrl(match, "away");
 
   return `
-    <article class="match-card">
+    <article class="match-card" id="match-${match.match_number}">
       <div class="match-meta">
         <div class="match-number">#${match.match_number}</div>
         <div class="kickoff">${fmtDate(match.kickoff_beijing)}</div>
