@@ -36,6 +36,37 @@ const venueInfo = {
   philadelphia: { tz: "America/New_York", label: "费城", elevation: "约 12m" },
 };
 
+const influenceModels = [
+  {
+    title: "世界杯小组赛影响因素占比",
+    subtitle: "硬实力上调版",
+    items: [
+      { name: "球队硬实力", detail: "球员能力 / 身价 / 核心球员", value: 35, color: "#287db7" },
+      { name: "战术体系", detail: "教练布置 / 阵型匹配", value: 18, color: "#ff7f0e" },
+      { name: "阵容深度与轮换", detail: "体能 / 替补 / 连续赛程", value: 14, color: "#2ca02c" },
+      { name: "稳定性与执行力", detail: "默契 / 失误率", value: 13, color: "#d62728" },
+      { name: "临场状态与心理", detail: "首战压力 / 出线压力", value: 9, color: "#9467bd" },
+      { name: "环境与赛程", detail: "气候 / 场地 / 旅行", value: 6, color: "#8c564b" },
+      { name: "裁判与运气", detail: "VAR / 门柱 / 折射", value: 5, color: "#da70bf" },
+    ],
+    note: "小组赛样本更多，容错更高，长期实力和阵容质量更容易体现。",
+  },
+  {
+    title: "世界杯淘汰赛影响因素占比",
+    subtitle: "硬实力上调版",
+    items: [
+      { name: "球队硬实力", detail: "球星质量 / 关键位置", value: 30, color: "#287db7" },
+      { name: "战术针对性", detail: "克制关系 / 换人博弈", value: 20, color: "#ff7f0e" },
+      { name: "临场状态与心理", detail: "抗压 / 点球 / 落后应对", value: 16, color: "#2ca02c" },
+      { name: "防守稳定与失误控制", detail: "零失误 / 门将发挥", value: 13, color: "#d62728" },
+      { name: "体能与伤病", detail: "加时 / 连续高强度", value: 9, color: "#9467bd" },
+      { name: "定位球与细节", detail: "角球 / 任意球 / 边路传中", value: 6, color: "#8c564b" },
+      { name: "裁判与偶然性", detail: "红牌 / VAR / 折射 / 门柱", value: 6, color: "#da70bf" },
+    ],
+    note: "淘汰赛单场淘汰，战术针对性、临场状态和失误控制的权重会上升。",
+  },
+];
+
 function el(id) {
   return document.getElementById(id);
 }
@@ -85,6 +116,24 @@ function sourceScore(match) {
   const local = match.completed === "True" ? `${match.home_score}-${match.away_score}` : "未赛";
   const zhibo8 = match.zhibo8?.score && match.zhibo8.score !== "-" ? match.zhibo8.score : "未赛";
   return { local, zhibo8 };
+}
+
+function leanPercent(score) {
+  const value = Number(score || 0);
+  return 50 + value / 2;
+}
+
+function signedScore(score) {
+  const value = Number(score || 0);
+  return value > 0 ? `+${value}` : `${value}`;
+}
+
+function parseFactors(match) {
+  try {
+    return JSON.parse(match.analysis?.factor_breakdown || "[]");
+  } catch {
+    return [];
+  }
 }
 
 function teamUrl(match, side) {
@@ -242,6 +291,8 @@ function renderMatchCard(match) {
   const venue = venueInfo[match.host_city] || {};
   const homeTeamUrl = teamUrl(match, "home");
   const awayTeamUrl = teamUrl(match, "away");
+  const lean = Number(match.analysis?.lean_score || 0);
+  const factors = parseFactors(match);
 
   return `
     <article class="match-card" id="match-${match.match_number}">
@@ -275,11 +326,33 @@ function renderMatchCard(match) {
 
       <aside class="compare-box">
         <h3>信息比对 <span class="check-ok">${checkLabel}</span></h3>
+        <div class="lean-block">
+          <div class="lean-head">
+            <span>赛前倾向</span>
+            <strong>${signedScore(lean)}</strong>
+          </div>
+          <div class="lean-scale" aria-label="赛前倾向值">
+            <span style="left:${leanPercent(lean)}%"></span>
+          </div>
+          <div class="lean-caption">
+            <span>${match.home_team}</span>
+            <b>${match.analysis?.lean_label || "待定"} · 置信度 ${match.analysis?.confidence || "低"}</b>
+            <span>${match.away_team}</span>
+          </div>
+        </div>
         <div class="compare-line"><span>主源</span><strong>${scoreFor(match)} · ${match.status}</strong></div>
         <div class="compare-line"><span>直播吧</span><strong>${scores.zhibo8} · ${match.zhibo8?.state_cn || "待补充"}</strong></div>
         <div class="compare-line"><span>比赛ID</span><strong>ESPN ${match.espn_event_id || "-"} / 直播吧 ${match.crosscheck?.zhibo8_match_id || "-"}</strong></div>
         <div class="compare-line"><span>球队资料</span><strong>${homeTeamUrl ? `<a href="${homeTeamUrl}" target="_blank" rel="noreferrer">${homeZh || match.home_team}</a>` : "待补充"} · ${awayTeamUrl ? `<a href="${awayTeamUrl}" target="_blank" rel="noreferrer">${awayZh || match.away_team}</a>` : "待补充"}</strong></div>
+        <div class="compare-line"><span>强度评分</span><strong>${match.analysis?.home_rating || "-"} : ${match.analysis?.away_rating || "-"}</strong></div>
         <div class="compare-line"><span>环境</span><strong>${cleanCity(match.host_city)} · 当地 ${localTime || "待补充"} · 海拔 ${venue.elevation || "待补充"}</strong></div>
+        ${
+          factors.length
+            ? `<div class="factor-mini">${factors
+                .map((item) => `<span>${item.factor} ${item.value > 0 ? "+" : ""}${item.value}</span>`)
+                .join("")}</div>`
+            : ""
+        }
         ${compareNote}
         <div class="notes-space">预留补充：阵容、伤停、赔率变化、战术重点、出场记录、进球数、个人赛前判断。建议每 12 小时刷新一次赛前资料。</div>
       </aside>
@@ -335,8 +408,57 @@ function renderVenues() {
     .join("");
 }
 
+function donutGradient(items) {
+  let cursor = 0;
+  return items
+    .map((item) => {
+      const start = cursor;
+      cursor += item.value;
+      return `${item.color} ${start}% ${cursor}%`;
+    })
+    .join(", ");
+}
+
+function renderInfluenceModels() {
+  el("influenceModels").innerHTML = influenceModels
+    .map(
+      (model) => `
+      <article class="model-card">
+        <div class="model-chart" style="--segments: ${donutGradient(model.items)}">
+          <div>
+            <strong>100%</strong>
+            <span>${model.subtitle}</span>
+          </div>
+        </div>
+        <div class="model-content">
+          <h3>${model.title}</h3>
+          <p>${model.note}</p>
+          <div class="factor-list">
+            ${model.items
+              .map(
+                (item) => `
+                <div class="factor">
+                  <span class="swatch" style="background:${item.color}"></span>
+                  <div>
+                    <strong>${item.name}</strong>
+                    <small>${item.detail}</small>
+                  </div>
+                  <b>${item.value}%</b>
+                </div>
+              `
+              )
+              .join("")}
+          </div>
+        </div>
+      </article>
+    `
+    )
+    .join("");
+}
+
 initMeta();
 initFilters();
 renderMatches();
+renderInfluenceModels();
 renderStandings();
 renderVenues();
