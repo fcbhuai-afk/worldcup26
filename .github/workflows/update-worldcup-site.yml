@@ -2,8 +2,9 @@ name: Update World Cup Site
 
 on:
   schedule:
-    # Beijing time: 02:00, 04:00, 06:00, 08:00, 10:00, 12:00
-    - cron: "0 0,2,4,18,20,22 * * *"
+    # Check every 15 minutes; the job only updates when a match reaches
+    # kickoff + 2h15m or kickoff + 3h.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -26,7 +27,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Decide whether to update
+        id: update_window
+        env:
+          FORCE_UPDATE: ${{ github.event_name == 'workflow_dispatch' }}
+        run: python tools/should_update_now.py
+
       - name: Refresh data
+        if: steps.update_window.outputs.should_run == 'true'
         run: |
           python tools/fetch_worldcup26_basic.py
           python tools/compare_zhibo8_schedule.py
@@ -35,6 +43,7 @@ jobs:
           python tools/build_web_data.py
 
       - name: Copy site files to Pages root
+        if: steps.update_window.outputs.should_run == 'true'
         run: |
           cp web/index.html index.html
           cp web/styles.css styles.css
@@ -42,6 +51,7 @@ jobs:
           cp web/data.js data.js
 
       - name: Commit and push changes
+        if: steps.update_window.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
