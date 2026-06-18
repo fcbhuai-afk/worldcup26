@@ -79,6 +79,19 @@
       <section class="section-band">
         <div class="section-head">
           <div>
+            <h2>即时淘汰赛模拟</h2>
+            <p id="knockoutNote">按当前积分榜生成 32 强对阵，随比赛结果刷新。</p>
+          </div>
+          <button id="openBracketFull" class="text-action" type="button">全屏查看</button>
+        </div>
+        <div id="thirdPlaceSnapshot" class="third-snapshot"></div>
+        <div id="knockoutRound32" class="knockout-grid"></div>
+        <div id="knockoutPath" class="path-grid"></div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-head">
+          <div>
             <h2>小组积分</h2>
             <p>来自 ESPN 积分接口，后续可继续补充 FIFA 官方口径。</p>
           </div>
@@ -96,6 +109,17 @@
         <div id="venues" class="venue-grid"></div>
       </section>
     </main>
+
+    <div id="bracketOverlay" class="bracket-overlay" aria-hidden="true">
+      <div class="bracket-overlay-head">
+        <div>
+          <strong>即时淘汰赛模拟</strong>
+          <span>对称树状图</span>
+        </div>
+        <button id="closeBracketFull" type="button">关闭</button>
+      </div>
+      <div id="bracketFullContent" class="bracket-full-content"></div>
+    </div>
 
     <footer>
       <p>数据源：TheStatsAPI、ESPN、直播吧/球迷宝。页面适合小范围分享，后续可继续接入球员、伤停和赛前模型。</p>
