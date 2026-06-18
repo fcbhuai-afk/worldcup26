@@ -1,0 +1,17 @@
+﻿stadium,host_city,match_count,first_kickoff_beijing,last_kickoff_beijing,source
+AT&T Stadium,dallas,9,2026-06-15T04:00+08:00,2026-07-15T03:00+08:00,TheStatsAPI fixtures
+Arrowhead Stadium,kansas-city,6,2026-06-17T09:00+08:00,2026-07-12T09:00+08:00,TheStatsAPI fixtures
+BC Place,vancouver,7,2026-06-14T12:00+08:00,2026-07-08T04:00+08:00,TheStatsAPI fixtures
+BMO Field,toronto,6,2026-06-13T03:00+08:00,2026-07-03T07:00+08:00,TheStatsAPI fixtures
+Estadio Akron,guadalajara,4,2026-06-12T10:00+08:00,2026-06-27T08:00+08:00,TheStatsAPI fixtures
+Estadio Azteca,mexico-city,5,2026-06-12T03:00+08:00,2026-07-06T08:00+08:00,TheStatsAPI fixtures
+Estadio BBVA,monterrey,4,2026-06-15T10:00+08:00,2026-06-30T09:00+08:00,TheStatsAPI fixtures
+Gillette Stadium,boston,7,2026-06-14T09:00+08:00,2026-07-10T04:00+08:00,TheStatsAPI fixtures
+Hard Rock Stadium,miami,7,2026-06-16T06:00+08:00,2026-07-19T05:00+08:00,TheStatsAPI fixtures
+Levi's Stadium,san-francisco,6,2026-06-14T03:00+08:00,2026-07-02T08:00+08:00,TheStatsAPI fixtures
+Lincoln Financial Field,philadelphia,6,2026-06-15T07:00+08:00,2026-07-05T05:00+08:00,TheStatsAPI fixtures
+Lumen Field,seattle,6,2026-06-16T03:00+08:00,2026-07-07T08:00+08:00,TheStatsAPI fixtures
+Mercedes-Benz Stadium,atlanta,8,2026-06-16T00:00+08:00,2026-07-16T03:00+08:00,TheStatsAPI fixtures
+MetLife Stadium,new-york,8,2026-06-14T06:00+08:00,2026-07-20T03:00+08:00,TheStatsAPI fixtures
+NRG Stadium,houston,7,2026-06-15T01:00+08:00,2026-07-05T01:00+08:00,TheStatsAPI fixtures
+SoFi Stadium,los-angeles,8,2026-06-13T09:00+08:00,2026-07-11T03:00+08:00,TheStatsAPI fixtures
