@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026 世界杯观赛数据库</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">World Cup 26</p>
+          <h1>2026 世界杯观赛数据库</h1>
+          <p class="subtitle">赛程、比分状态、小组积分与多源核对集中在一页里。</p>
+        </div>
+        <div class="summary-grid" aria-label="数据概览">
+          <div>
+            <strong id="matchCount">104</strong>
+            <span>比赛</span>
+          </div>
+          <div>
+            <strong id="teamCount">48</strong>
+            <span>球队</span>
+          </div>
+          <div>
+            <strong id="venueCount">16</strong>
+            <span>场馆</span>
+          </div>
+          <div>
+            <strong id="crosscheckCount">104</strong>
+            <span>核对通过</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="筛选比赛">
+        <div class="control-group">
+          <label for="stageFilter">阶段</label>
+          <select id="stageFilter"></select>
+        </div>
+        <div class="control-group">
+          <label for="groupFilter">小组</label>
+          <select id="groupFilter"></select>
+        </div>
+        <div class="control-group">
+          <label for="statusFilter">状态</label>
+          <select id="statusFilter"></select>
+        </div>
+        <div class="control-group search">
+          <label for="searchInput">搜索</label>
+          <input id="searchInput" type="search" placeholder="球队、城市、场馆" />
+        </div>
+        <div class="control-group quick-link">
+          <label>快捷入口</label>
+          <a id="topBracketLink" class="top-link" href="#knockoutRound32">淘汰赛即时模拟对阵</a>
+        </div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-head">
+          <div>
+            <h2>比赛赛程</h2>
+            <p id="resultHint">正在载入比赛。</p>
+          </div>
+          <button id="resetFilters" type="button">重置筛选</button>
+        </div>
+        <div id="matches" class="matches" aria-live="polite"></div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-head">
+          <div>
+            <h2>赛前分析权重</h2>
+            <p>小组赛与淘汰赛的判断逻辑不同：小组赛更重长期硬实力，淘汰赛更重临场与针对性。</p>
+          </div>
+        </div>
+        <div id="influenceModels" class="influence-models"></div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-head">
+          <div>
+            <h2>即时淘汰赛模拟</h2>
+            <p id="knockoutNote">按当前积分榜生成 32 强对阵，随比赛结果刷新。</p>
+          </div>
+          <button id="openBracketFull" class="text-action" type="button">全屏查看</button>
+        </div>
+        <div id="thirdPlaceSnapshot" class="third-snapshot"></div>
+        <div id="knockoutRound32" class="knockout-grid"></div>
+        <div id="knockoutPath" class="path-grid"></div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-head">
+          <div>
+            <h2>小组积分</h2>
+            <p>来自 ESPN 积分接口，后续可继续补充 FIFA 官方口径。</p>
+          </div>
+        </div>
+        <div id="standings" class="standings"></div>
+      </section>
+
+      <section class="section-band">
+        <div class="section-head">
+          <div>
+            <h2>场馆概览</h2>
+            <p>按场馆统计承办场次，方便安排重点观赛窗口。</p>
+          </div>
+        </div>
+        <div id="venues" class="venue-grid"></div>
+      </section>
+    </main>
+
+    <div id="bracketOverlay" class="bracket-overlay" aria-hidden="true">
+      <div class="bracket-overlay-head">
+        <div>
+          <strong>即时淘汰赛模拟</strong>
+          <span>对称树状图</span>
+        </div>
+        <button id="closeBracketFull" type="button">关闭</button>
+      </div>
+      <div id="bracketFullContent" class="bracket-full-content"></div>
+    </div>
+
+    <footer>
+      <p>数据源：TheStatsAPI、ESPN、直播吧/球迷宝。页面适合小范围分享，后续可继续接入球员、伤停和赛前模型。</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
