@@ -215,6 +215,11 @@ function initFilters() {
 }
 
 function initBracketOverlay() {
+  el("topBracketLink").addEventListener("click", (event) => {
+    event.preventDefault();
+    el("knockoutRound32").scrollIntoView({ behavior: "smooth", block: "start" });
+    window.setTimeout(openBracketFull, 250);
+  });
   el("openBracketFull").addEventListener("click", openBracketFull);
   el("closeBracketFull").addEventListener("click", closeBracketFull);
   el("bracketOverlay").addEventListener("click", (event) => {
