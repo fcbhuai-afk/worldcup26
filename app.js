@@ -42,14 +42,14 @@ const influenceModels = [
     subtitle: "硬实力上调版",
     items: [
       { name: "球队硬实力", detail: "球员能力 / 身价 / 核心球员", value: 35, color: "#287db7" },
-      { name: "战术体系", detail: "教练布置 / 阵型匹配", value: 18, color: "#ff7f0e" },
-      { name: "阵容深度与轮换", detail: "体能 / 替补 / 连续赛程", value: 14, color: "#2ca02c" },
-      { name: "稳定性与执行力", detail: "默契 / 失误率", value: 13, color: "#d62728" },
-      { name: "临场状态与心理", detail: "首战压力 / 出线压力", value: 9, color: "#9467bd" },
-      { name: "环境与赛程", detail: "气候 / 场地 / 旅行", value: 6, color: "#8c564b" },
+      { name: "战术体系", detail: "教练布置 / 阵型匹配", value: 17, color: "#ff7f0e" },
+      { name: "阵容深度与轮换", detail: "体能 / 替补 / 连续赛程", value: 13, color: "#2ca02c" },
+      { name: "稳定性与执行力", detail: "默契 / 失误率", value: 12, color: "#d62728" },
+      { name: "临场状态与心理", detail: "首战压力 / 出线压力", value: 8, color: "#9467bd" },
+      { name: "环境与赛程", detail: "气温 / 湿度 / 当地下午 / 旅行", value: 10, color: "#8c564b" },
       { name: "裁判与运气", detail: "VAR / 门柱 / 折射", value: 5, color: "#da70bf" },
     ],
-    note: "小组赛样本更多，容错更高，长期实力和阵容质量更容易体现。",
+    note: "小组赛仍以硬实力为底盘，但美国/墨西哥/加拿大的午后高温会更明显影响节奏、体能和爆冷空间。",
   },
   {
     title: "世界杯淘汰赛影响因素占比",
@@ -214,6 +214,17 @@ function initFilters() {
   });
 }
 
+function initBracketOverlay() {
+  el("openBracketFull").addEventListener("click", openBracketFull);
+  el("closeBracketFull").addEventListener("click", closeBracketFull);
+  el("bracketOverlay").addEventListener("click", (event) => {
+    if (event.target.id === "bracketOverlay") closeBracketFull();
+  });
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeBracketFull();
+  });
+}
+
 function matchPassesFilters(match) {
   if (state.stage !== "all" && match.stage !== state.stage) return false;
   if (state.group !== "all" && match.group !== state.group) return false;
@@ -346,6 +357,7 @@ function renderMatchCard(match) {
         <div class="compare-line"><span>球队资料</span><strong>${homeTeamUrl ? `<a href="${homeTeamUrl}" target="_blank" rel="noreferrer">${homeZh || match.home_team}</a>` : "待补充"} · ${awayTeamUrl ? `<a href="${awayTeamUrl}" target="_blank" rel="noreferrer">${awayZh || match.away_team}</a>` : "待补充"}</strong></div>
         <div class="compare-line"><span>强度评分</span><strong>${match.analysis?.home_rating || "-"} : ${match.analysis?.away_rating || "-"}</strong></div>
         <div class="compare-line"><span>环境</span><strong>${cleanCity(match.host_city)} · 当地 ${localTime || "待补充"} · 海拔 ${venue.elevation || "待补充"}</strong></div>
+        ${match.analysis?.environment_note ? `<div class="compare-line"><span>热负荷</span><strong>${match.analysis.environment_note}</strong></div>` : ""}
         ${
           factors.length
             ? `<div class="factor-mini">${factors
@@ -393,6 +405,139 @@ function renderStandings() {
       `;
     })
     .join("");
+}
+
+function renderKnockoutSimulation() {
+  const simulation = data.knockout_simulation || {};
+  const thirdPlace = simulation.third_place || [];
+  const round32 = simulation.round32 || [];
+  const path = simulation.path || [];
+
+  el("knockoutNote").textContent =
+    simulation.note || "按当前积分榜生成 32 强对阵，随比赛结果刷新。";
+
+  el("thirdPlaceSnapshot").innerHTML = thirdPlace.length
+    ? `
+      <div class="snapshot-title">最佳小组第三即时排序</div>
+      <div class="third-list">
+        ${thirdPlace
+          .map(
+            (row) => `
+            <div class="third-item ${row.status === "晋级区" ? "advance" : ""}">
+              <strong>${row.rank}. ${row.group}组 ${row.team}</strong>
+              <span>${row.points}分 · 净胜${row.goal_difference} · 进${row.goals_for} · ${row.status}</span>
+            </div>
+          `
+          )
+          .join("")}
+      </div>
+    `
+    : `<div class="empty-state">暂无第三名排序。</div>`;
+
+  const byRound = path.reduce((acc, match) => {
+    acc[match.round] = acc[match.round] || [];
+    acc[match.round].push(match);
+    return acc;
+  }, {});
+
+  const renderBracketMatch = (match, roundClass, isLiveTeams = false) => `
+    <article class="bracket-match ${roundClass}">
+      <div class="bracket-match-head">
+        <span>#${match.match_number}</span>
+        <strong>${match.kickoff_beijing ? fmtDate(match.kickoff_beijing) : ""}</strong>
+      </div>
+      <div class="bracket-team">
+        <small>${isLiveTeams ? match.left_source || match.left_rule : "上半区"}</small>
+        <b>${match.left_team}</b>
+      </div>
+      <div class="bracket-team">
+        <small>${isLiveTeams ? match.right_source || match.right_rule : "下半区"}</small>
+        <b>${match.right_team}</b>
+      </div>
+      <p>${match.stadium ? `${match.stadium} · ${cleanCity(match.host_city)}` : match.round}</p>
+    </article>
+  `;
+
+  const pickPath = (numbers) => numbers.map((number) => path.find((match) => Number(match.match_number) === number)).filter(Boolean);
+  const finalMatch = (byRound["决赛"] || [])[0];
+  const leftRounds = [
+    { title: "32强", className: "round-32", matches: round32.slice(0, 8), liveTeams: true },
+    { title: "16强", className: "round-16", matches: pickPath([89, 90, 91, 92]) },
+    { title: "1/4决赛", className: "round-8", matches: pickPath([97, 99]) },
+    { title: "半决赛", className: "round-4", matches: pickPath([101]) },
+  ];
+  const rightRounds = [
+    { title: "半决赛", className: "round-4", matches: pickPath([102]) },
+    { title: "1/4决赛", className: "round-8", matches: pickPath([98, 100]) },
+    { title: "16强", className: "round-16", matches: pickPath([93, 94, 95, 96]) },
+    { title: "32强", className: "round-32", matches: round32.slice(8), liveTeams: true },
+  ];
+
+  const renderRound = (round, side) => `
+    <section class="bracket-round ${side}-round ${round.className}">
+      <h3>${round.title}</h3>
+      <div class="bracket-stack">
+        ${round.matches
+          .map((match) => renderBracketMatch(match, round.className, round.liveTeams))
+          .join("")}
+      </div>
+    </section>
+  `;
+
+  const bracketMarkup = round32.length
+    ? `
+      <div class="bracket-scroll" aria-label="即时淘汰赛树状图">
+        <div class="bracket-tree symmetric-tree">
+          <div class="bracket-side left-side">
+            ${leftRounds.map((round) => renderRound(round, "left")).join("")}
+          </div>
+          <section class="bracket-center">
+            <h3>决赛</h3>
+            <div class="bracket-stack">
+              ${finalMatch ? renderBracketMatch(finalMatch, "round-final") : ""}
+            </div>
+          </section>
+          <div class="bracket-side right-side">
+            ${rightRounds.map((round) => renderRound(round, "right")).join("")}
+          </div>
+        </div>
+      </div>
+    `
+    : "";
+
+  el("knockoutRound32").innerHTML = round32.length
+    ? bracketMarkup
+    : `<div class="empty-state">暂无 32 强模拟对阵。</div>`;
+  el("bracketFullContent").innerHTML = bracketMarkup;
+
+  const thirdMatch = (byRound["三四名决赛"] || [])[0];
+  el("knockoutPath").innerHTML = thirdMatch
+    ? `
+      <div class="third-place-card">
+        <span>#${thirdMatch.match_number} 三四名决赛</span>
+        <strong>${thirdMatch.left_team} vs ${thirdMatch.right_team}</strong>
+        <em>${thirdMatch.kickoff_beijing ? fmtDate(thirdMatch.kickoff_beijing) : ""} · ${thirdMatch.stadium || ""}</em>
+      </div>
+    `
+    : "";
+}
+
+function openBracketFull() {
+  const overlay = el("bracketOverlay");
+  overlay.classList.add("open");
+  overlay.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  const scroller = overlay.querySelector(".bracket-scroll");
+  if (scroller) {
+    scroller.scrollLeft = Math.max(0, (scroller.scrollWidth - scroller.clientWidth) / 2);
+  }
+}
+
+function closeBracketFull() {
+  const overlay = el("bracketOverlay");
+  overlay.classList.remove("open");
+  overlay.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
 }
 
 function renderVenues() {
@@ -458,7 +603,9 @@ function renderInfluenceModels() {
 
 initMeta();
 initFilters();
+initBracketOverlay();
 renderMatches();
 renderInfluenceModels();
+renderKnockoutSimulation();
 renderStandings();
 renderVenues();
