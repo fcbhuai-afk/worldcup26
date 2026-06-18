@@ -1,0 +1,20 @@
+{
+  "fetched_at_utc": "2026-06-18T18:50:51+00:00",
+  "matches": 104,
+  "teams": 48,
+  "venues": 16,
+  "standings_rows": 48,
+  "raw_sources": {
+    "fixtures": "https://www.thestatsapi.com/world-cup/data/fixtures.json",
+    "espn_scoreboard": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260611-20260719&limit=200",
+    "espn_standings": "https://site.api.espn.com/apis/v2/sports/soccer/fifa.world/standings?season=2026"
+  },
+  "outputs": [
+    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\matches.csv",
+    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\teams.csv",
+    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\group_matches.csv",
+    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\venues.csv",
+    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\standings.csv",
+    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\worldcup26_basic.sqlite"
+  ]
+}
