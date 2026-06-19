@@ -388,6 +388,37 @@ button:hover {
   text-align: center;
 }
 
+.probability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.probability-grid div {
+  padding: 6px 7px;
+  border: 1px solid #e0e8eb;
+  border-radius: 5px;
+  background: #f8fafb;
+  text-align: center;
+}
+
+.probability-grid span,
+.probability-grid strong {
+  display: block;
+}
+
+.probability-grid span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.probability-grid strong {
+  margin-top: 1px;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
 .check-ok {
   color: var(--ok);
   font-size: 12px;
