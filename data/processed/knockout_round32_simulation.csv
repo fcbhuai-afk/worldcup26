@@ -1,11 +1,11 @@
 ﻿match_number,round,kickoff_beijing,stadium,host_city,left_rule,right_rule,left_source,right_source,left_group,right_group,left_team,right_team,left_detail,right_detail
-73,32强,2026-06-29T03:00+08:00,SoFi Stadium,los-angeles,A2,B2,A2,B2,A,B,South Korea,Switzerland,"South Korea (3分, 净胜+1)","Switzerland (4分, 净胜+3)"
+73,32强,2026-06-29T03:00+08:00,SoFi Stadium,los-angeles,A2,B2,A2,B2,A,B,South Korea,Switzerland,"South Korea (3分, 净胜0)","Switzerland (4分, 净胜+3)"
 74,32强,2026-06-30T04:30+08:00,Gillette Stadium,boston,C1,F2,C1,F2,C,F,Scotland,Japan,"Scotland (3分, 净胜+1)","Japan (1分, 净胜0)"
 75,32强,2026-06-30T09:00+08:00,Estadio BBVA,monterrey,E1,A3/B3/C3/D3/F3,E1,F3,E,F,Germany,Netherlands,"Germany (3分, 净胜+6)","Netherlands (1分, 净胜0)"
 76,32强,2026-06-30T01:00+08:00,NRG Stadium,houston,F1,C2,F1,C2,F,C,Sweden,Morocco,"Sweden (3分, 净胜+4)","Morocco (1分, 净胜0)"
 77,32强,2026-07-01T05:00+08:00,MetLife Stadium,new-york,I1,C3/D3/F3/G3/H3,I1,C3,I,C,Norway,Brazil,"Norway (3分, 净胜+3)","Brazil (1分, 净胜0)"
 78,32强,2026-07-01T01:00+08:00,AT&T Stadium,dallas,E2,I2,E2,I2,E,I,Ivory Coast,France,"Ivory Coast (3分, 净胜+1)","France (3分, 净胜+2)"
-79,32强,2026-07-01T09:00+08:00,Estadio Azteca,mexico-city,A1,C3/E3/F3/H3/I3,A1,H3,A,H,Mexico,Spain,"Mexico (3分, 净胜+2)","Spain (1分, 净胜0)"
+79,32强,2026-07-01T09:00+08:00,Estadio Azteca,mexico-city,A1,C3/E3/F3/H3/I3,A1,H3,A,H,Mexico,Spain,"Mexico (6分, 净胜+3)","Spain (1分, 净胜0)"
 80,32强,2026-07-02T00:00+08:00,Mercedes-Benz Stadium,atlanta,L1,E3/H3/I3/J3/K3,L1,K3,L,K,England,Portugal,"England (3分, 净胜+2)","Portugal (1分, 净胜0)"
 81,32强,2026-07-02T08:00+08:00,Levi's Stadium,san-francisco,D1,B3/E3/F3/I3/J3,D1,B3,D,B,United States,Bosnia-Herzegovina,"United States (3分, 净胜+3)","Bosnia-Herzegovina (1分, 净胜-3)"
 82,32强,2026-07-02T04:00+08:00,Lumen Field,seattle,G1,A3/E3/H3/I3/J3,G1,A3,G,A,New Zealand,Czechia,"New Zealand (1分, 净胜0)","Czechia (1分, 净胜-1)"
