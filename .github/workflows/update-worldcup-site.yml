@@ -39,6 +39,7 @@ jobs:
           python tools/fetch_worldcup26_basic.py
           python tools/compare_zhibo8_schedule.py
           python tools/build_knockout_simulation.py
+          python tools/fetch_pre_match_context.py
           python tools/build_match_analysis.py
           python tools/build_web_data.py
 
@@ -58,7 +59,7 @@ jobs:
           git add index.html styles.css app.js data.js
           git add web/index.html web/styles.css web/app.js web/data.js
           git add tools .github/workflows/update-worldcup-site.yml
-          git add data/fetch_summary.json data/zhibo8_crosscheck_summary.json data/processed
+          git add data/fetch_summary.json data/zhibo8_crosscheck_summary.json data/pre_match_context.json data/processed
           if git diff --cached --quiet; then
             echo "No data changes to publish."
           else
