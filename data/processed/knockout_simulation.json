@@ -13,16 +13,6 @@
     },
     {
       "rank": 2,
-      "group": "B",
-      "team": "Qatar",
-      "played": "1",
-      "points": "1",
-      "goal_difference": "0",
-      "goals_for": "1",
-      "status": "晋级区"
-    },
-    {
-      "rank": 3,
       "group": "C",
       "team": "Brazil",
       "played": "1",
@@ -32,7 +22,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 4,
+      "rank": 3,
       "group": "G",
       "team": "Belgium",
       "played": "1",
@@ -42,7 +32,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "group": "K",
       "team": "Portugal",
       "played": "1",
@@ -52,7 +42,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "group": "H",
       "team": "Spain",
       "played": "1",
@@ -62,12 +52,22 @@
       "status": "晋级区"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "group": "A",
       "team": "Czechia",
       "played": "2",
       "points": "1",
       "goal_difference": "-1",
+      "goals_for": "2",
+      "status": "晋级区"
+    },
+    {
+      "rank": 7,
+      "group": "B",
+      "team": "Bosnia-Herzegovina",
+      "played": "2",
+      "points": "1",
+      "goal_difference": "-3",
       "goals_for": "2",
       "status": "晋级区"
     },
@@ -136,9 +136,9 @@
       "left_group": "A",
       "right_group": "B",
       "left_team": "South Korea",
-      "right_team": "Canada",
+      "right_team": "Switzerland",
       "left_detail": "South Korea (3分, 净胜+1)",
-      "right_detail": "Canada (1分, 净胜0)"
+      "right_detail": "Switzerland (4分, 净胜+3)"
     },
     {
       "match_number": 74,
@@ -272,9 +272,9 @@
       "left_group": "D",
       "right_group": "B",
       "left_team": "United States",
-      "right_team": "Qatar",
+      "right_team": "Bosnia-Herzegovina",
       "left_detail": "United States (3分, 净胜+3)",
-      "right_detail": "Qatar (1分, 净胜0)"
+      "right_detail": "Bosnia-Herzegovina (1分, 净胜-3)"
     },
     {
       "match_number": 82,
@@ -339,9 +339,9 @@
       "right_source": "G3",
       "left_group": "B",
       "right_group": "G",
-      "left_team": "Switzerland",
+      "left_team": "Canada",
       "right_team": "Belgium",
-      "left_detail": "Switzerland (1分, 净胜0)",
+      "left_detail": "Canada (4分, 净胜+6)",
       "right_detail": "Belgium (1分, 净胜0)"
     },
     {
