@@ -1,0 +1,145 @@
+{
+  "updated_at": "2026-06-19T18:34:16+00:00",
+  "matches": {
+    "29": {
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760444/haiti-brazil",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869150v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-19T18:34:16+00:00",
+      "weather": {
+        "temperature_c": 25.8,
+        "humidity_pct": 31,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-20T00:30:00Z"
+      }
+    },
+    "30": {
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760445/morocco-scotland",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869151v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-19T18:34:16+00:00",
+      "weather": {
+        "temperature_c": 25.0,
+        "humidity_pct": 38,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-19T22:00:00Z"
+      }
+    },
+    "31": {
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760443/paraguay-turkiye",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869155v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-19T18:34:16+00:00",
+      "weather": {
+        "temperature_c": 16.2,
+        "humidity_pct": 86,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-20T03:00:00Z"
+      }
+    },
+    "32": {
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760442/australia-united-states",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1867426v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-19T18:34:16+00:00",
+      "weather": {
+        "temperature_c": 23.2,
+        "humidity_pct": 54,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-19T19:00:00Z"
+      }
+    }
+  }
+}
