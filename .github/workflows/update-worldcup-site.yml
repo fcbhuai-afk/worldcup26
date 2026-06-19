@@ -2,9 +2,9 @@ name: Update World Cup Site
 
 on:
   schedule:
-    # Check every 15 minutes; the job only updates when a match reaches
-    # kickoff + 2h15m or kickoff + 3h.
-    - cron: "*/15 * * * *"
+    # Wake five minutes after each quarter hour. This avoids the busiest
+    # scheduler boundaries while the script still matches one exact window.
+    - cron: "5,20,35,50 * * * *"
   workflow_dispatch:
 
 permissions:
