@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-06-19T18:34:16+00:00",
+  "fetched_at_utc": "2026-06-19T18:35:49+00:00",
   "matches": 104,
   "teams": 48,
   "venues": 16,
@@ -10,11 +10,11 @@
     "espn_standings": "https://site.api.espn.com/apis/v2/sports/soccer/fifa.world/standings?season=2026"
   },
   "outputs": [
-    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\matches.csv",
-    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\teams.csv",
-    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\group_matches.csv",
-    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\venues.csv",
-    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\processed\\standings.csv",
-    "C:\\Users\\HLJ\\Documents\\世界杯\\data\\worldcup26_basic.sqlite"
+    "/home/runner/work/worldcup26/worldcup26/data/processed/matches.csv",
+    "/home/runner/work/worldcup26/worldcup26/data/processed/teams.csv",
+    "/home/runner/work/worldcup26/worldcup26/data/processed/group_matches.csv",
+    "/home/runner/work/worldcup26/worldcup26/data/processed/venues.csv",
+    "/home/runner/work/worldcup26/worldcup26/data/processed/standings.csv",
+    "/home/runner/work/worldcup26/worldcup26/data/worldcup26_basic.sqlite"
   ]
 }
