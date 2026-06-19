@@ -136,6 +136,14 @@ function parseFactors(match) {
   }
 }
 
+function parsePreMatchSources(match) {
+  try {
+    return JSON.parse(match.analysis?.pre_match_sources || "[]");
+  } catch {
+    return [];
+  }
+}
+
 function teamUrl(match, side) {
   const zhibo8 = match.zhibo8 || {};
   const team = side === "home" ? zhibo8.home_team_zh : zhibo8.away_team_zh;
@@ -309,6 +317,10 @@ function renderMatchCard(match) {
   const awayTeamUrl = teamUrl(match, "away");
   const lean = Number(match.analysis?.lean_score || 0);
   const factors = parseFactors(match);
+  const preMatchSources = parsePreMatchSources(match);
+  const homeWin = Number(match.analysis?.home_win_probability ?? 33);
+  const draw = Number(match.analysis?.draw_probability ?? 34);
+  const awayWin = Number(match.analysis?.away_win_probability ?? 33);
 
   return `
     <article class="match-card" id="match-${match.match_number}">
@@ -355,6 +367,11 @@ function renderMatchCard(match) {
             <b>${match.analysis?.lean_label || "待定"} · 置信度 ${match.analysis?.confidence || "低"}</b>
             <span>${match.away_team}</span>
           </div>
+          <div class="probability-grid" aria-label="赛果概率">
+            <div><span>主胜</span><strong>${homeWin}%</strong></div>
+            <div><span>平局</span><strong>${draw}%</strong></div>
+            <div><span>客胜</span><strong>${awayWin}%</strong></div>
+          </div>
         </div>
         <div class="compare-line"><span>主源</span><strong>${scoreFor(match)} · ${match.status}</strong></div>
         <div class="compare-line"><span>直播吧</span><strong>${scores.zhibo8} · ${match.zhibo8?.state_cn || "待补充"}</strong></div>
@@ -363,6 +380,9 @@ function renderMatchCard(match) {
         <div class="compare-line"><span>强度评分</span><strong>${match.analysis?.home_rating || "-"} : ${match.analysis?.away_rating || "-"}</strong></div>
         <div class="compare-line"><span>环境</span><strong>${cleanCity(match.host_city)} · 当地 ${localTime || "待补充"} · 海拔 ${venue.elevation || "待补充"}</strong></div>
         ${match.analysis?.environment_note ? `<div class="compare-line"><span>热负荷</span><strong>${match.analysis.environment_note}</strong></div>` : ""}
+        <div class="compare-line"><span>临场资料</span><strong>${match.analysis?.pre_match_status || "等待赛前资料"}${match.analysis?.pre_match_updated_at ? ` · ${match.analysis.pre_match_updated_at}` : ""}</strong></div>
+        ${match.analysis?.evidence_summary ? `<div class="compare-line"><span>资料摘要</span><strong>${match.analysis.evidence_summary}</strong></div>` : ""}
+        ${preMatchSources.length ? `<div class="compare-line"><span>赛前来源</span><strong>${preMatchSources.map((source) => `<a href="${source.url}" target="_blank" rel="noreferrer">${source.name}</a>`).join(" · ")}</strong></div>` : ""}
         ${
           factors.length
             ? `<div class="factor-mini">${factors
@@ -371,7 +391,7 @@ function renderMatchCard(match) {
             : ""
         }
         ${compareNote}
-        <div class="notes-space">预留补充：阵容、伤停、赔率变化、战术重点、出场记录、进球数、个人赛前判断。建议每 12 小时刷新一次赛前资料。</div>
+        <div class="notes-space">赛前资料：首发、伤停、赔率与实时天气会在有来源与时间戳后纳入临场修正；比赛前 1 小时应复核一次。</div>
       </aside>
     </article>
   `;
