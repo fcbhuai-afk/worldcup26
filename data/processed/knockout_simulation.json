@@ -24,7 +24,7 @@
     {
       "rank": 3,
       "group": "F",
-      "team": "Netherlands",
+      "team": "Japan",
       "played": "1",
       "points": "1",
       "goal_difference": "0",
@@ -153,9 +153,9 @@
       "left_group": "C",
       "right_group": "F",
       "left_team": "Brazil",
-      "right_team": "Japan",
+      "right_team": "Sweden",
       "left_detail": "Brazil (4分, 净胜+3)",
-      "right_detail": "Japan (1分, 净胜0)"
+      "right_detail": "Sweden (3分, 净胜0)"
     },
     {
       "match_number": 75,
@@ -186,9 +186,9 @@
       "right_source": "C2",
       "left_group": "F",
       "right_group": "C",
-      "left_team": "Sweden",
+      "left_team": "Netherlands",
       "right_team": "Morocco",
-      "left_detail": "Sweden (3分, 净胜+4)",
+      "left_detail": "Netherlands (4分, 净胜+4)",
       "right_detail": "Morocco (4分, 净胜+1)"
     },
     {
@@ -238,9 +238,9 @@
       "left_group": "A",
       "right_group": "F",
       "left_team": "Mexico",
-      "right_team": "Netherlands",
+      "right_team": "Japan",
       "left_detail": "Mexico (6分, 净胜+3)",
-      "right_detail": "Netherlands (1分, 净胜0)"
+      "right_detail": "Japan (1分, 净胜0)"
     },
     {
       "match_number": 80,
