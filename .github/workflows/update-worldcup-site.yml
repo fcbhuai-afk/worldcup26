@@ -2,9 +2,8 @@ name: Update World Cup Site
 
 on:
   schedule:
-    # Wake five minutes after each quarter hour. This avoids the busiest
-    # scheduler boundaries while the script still matches one exact window.
-    - cron: "5,20,35,50 * * * *"
+    # Refresh public score and weather sources every five minutes.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -27,14 +26,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Decide whether to update
-        id: update_window
-        env:
-          FORCE_UPDATE: ${{ github.event_name == 'workflow_dispatch' }}
-        run: python tools/should_update_now.py
-
       - name: Refresh data
-        if: steps.update_window.outputs.should_run == 'true'
         run: |
           python tools/fetch_worldcup26_basic.py
           python tools/compare_zhibo8_schedule.py
@@ -44,7 +36,6 @@ jobs:
           python tools/build_web_data.py
 
       - name: Copy site files to Pages root
-        if: steps.update_window.outputs.should_run == 'true'
         run: |
           cp web/index.html index.html
           cp web/styles.css styles.css
@@ -52,14 +43,13 @@ jobs:
           cp web/data.js data.js
 
       - name: Commit and push changes
-        if: steps.update_window.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html styles.css app.js data.js
           git add web/index.html web/styles.css web/app.js web/data.js
           git add tools .github/workflows/update-worldcup-site.yml
-          git add data/fetch_summary.json data/zhibo8_crosscheck_summary.json data/pre_match_context.json data/processed
+          git add data/zhibo8_crosscheck_summary.json data/pre_match_context.json data/processed
           if git diff --cached --quiet; then
             echo "No data changes to publish."
           else
