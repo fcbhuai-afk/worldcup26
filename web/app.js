@@ -1,4 +1,5 @@
 const data = window.WC26_DATA;
+const HGA_ODDS_URL = "https://www.hga038.com";
 const state = {
   stage: "all",
   group: "all",
@@ -349,6 +350,18 @@ function renderMatchCard(match) {
           ${match.espn_summary_url ? `<a href="${match.espn_summary_url}" target="_blank" rel="noreferrer">ESPN 概览</a>` : ""}
           ${match.espn_stats_url ? `<a href="${match.espn_stats_url}" target="_blank" rel="noreferrer">ESPN 数据</a>` : ""}
           ${match.zhibo8?.match_page ? `<a href="${match.zhibo8.match_page}" target="_blank" rel="noreferrer">直播吧</a>` : ""}
+        </div>
+        <div class="live-info-panel">
+          <div class="live-info-head">
+            <span>实时比赛资料</span>
+            <a href="${HGA_ODDS_URL}" target="_blank" rel="noopener noreferrer">HGA 赔率</a>
+          </div>
+          <div class="live-info-grid">
+            <div><span>比分</span><strong>${scoreFor(match)} · ${match.status}</strong></div>
+            <div><span>天气</span><strong>${match.analysis?.environment_note || "等待赛前天气"}</strong></div>
+            <div><span>赔率</span><strong>请通过 HGA 外链查看</strong></div>
+          </div>
+          <p>赛果和赛前天气由公开数据源更新；HGA 赔率目前仅作为外部入口。</p>
         </div>
       </div>
 
