@@ -90,6 +90,7 @@ def main():
             continue
 
         entry = entries.setdefault(str(match["match_number"]), {})
+        before = json.dumps(entry, ensure_ascii=False, sort_keys=True)
         weather = weather_at(match.get("host_city"), kickoff)
         if weather:
             entry["weather"] = weather
@@ -108,10 +109,13 @@ def main():
         entry.setdefault("adjustments", {"home": 0, "away": 0, "draw": 0})
         entry.setdefault("odds", {})
         entry.setdefault("underdog_defensive_evidence", False)
-        entry["updated_at"] = now.isoformat(timespec="seconds")
-        updated += 1
+        candidate = json.dumps(entry, ensure_ascii=False, sort_keys=True)
+        if candidate != before:
+            entry["updated_at"] = now.isoformat(timespec="seconds")
+            updated += 1
 
-    context["updated_at"] = now.isoformat(timespec="seconds")
+    if updated:
+        context["updated_at"] = now.isoformat(timespec="seconds")
     CONTEXT_FILE.write_text(json.dumps(context, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({"updated_matches": updated, "lookahead_hours": LOOKAHEAD_HOURS}, ensure_ascii=False))
 
