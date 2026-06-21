@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T10:54:50+00:00",
+  "updated_at": "2026-06-21T16:56:50+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -283,8 +283,8 @@
     },
     "37": {
       "weather": {
-        "temperature_c": 29.7,
-        "humidity_pct": 71,
+        "temperature_c": 29.9,
+        "humidity_pct": 72,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-21T22:00:00Z"
@@ -314,7 +314,7 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-21T10:54:50+00:00"
+      "updated_at": "2026-06-21T16:56:50+00:00"
     },
     "38": {
       "weather": {
@@ -353,8 +353,8 @@
     },
     "39": {
       "weather": {
-        "temperature_c": 23.8,
-        "humidity_pct": 55,
+        "temperature_c": 25.0,
+        "humidity_pct": 53,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-21T19:00:00Z"
@@ -384,7 +384,42 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-21T10:54:50+00:00"
+      "updated_at": "2026-06-21T16:56:50+00:00"
+    },
+    "40": {
+      "weather": {
+        "temperature_c": 22.7,
+        "humidity_pct": 45,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-22T01:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760452/egypt-new-zealand",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869174v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-21T16:56:50+00:00"
     }
   }
 }
