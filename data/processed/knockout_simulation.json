@@ -3,6 +3,16 @@
   "third_place": [
     {
       "rank": 1,
+      "group": "F",
+      "team": "Sweden",
+      "played": "2",
+      "points": "3",
+      "goal_difference": "0",
+      "goals_for": "6",
+      "status": "晋级区"
+    },
+    {
+      "rank": 2,
       "group": "C",
       "team": "Scotland",
       "played": "2",
@@ -12,22 +22,12 @@
       "status": "晋级区"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "group": "D",
       "team": "Paraguay",
       "played": "2",
       "points": "3",
       "goal_difference": "-2",
-      "goals_for": "2",
-      "status": "晋级区"
-    },
-    {
-      "rank": 3,
-      "group": "F",
-      "team": "Japan",
-      "played": "1",
-      "points": "1",
-      "goal_difference": "0",
       "goals_for": "2",
       "status": "晋级区"
     },
@@ -73,22 +73,22 @@
     },
     {
       "rank": 8,
+      "group": "E",
+      "team": "Ecuador",
+      "played": "2",
+      "points": "1",
+      "goal_difference": "-1",
+      "goals_for": "0",
+      "status": "晋级区"
+    },
+    {
+      "rank": 9,
       "group": "B",
       "team": "Bosnia-Herzegovina",
       "played": "2",
       "points": "1",
       "goal_difference": "-3",
       "goals_for": "2",
-      "status": "晋级区"
-    },
-    {
-      "rank": 9,
-      "group": "E",
-      "team": "Ecuador",
-      "played": "1",
-      "points": "0",
-      "goal_difference": "-1",
-      "goals_for": "0",
       "status": "淘汰区"
     },
     {
@@ -153,9 +153,9 @@
       "left_group": "C",
       "right_group": "F",
       "left_team": "Brazil",
-      "right_team": "Sweden",
+      "right_team": "Japan",
       "left_detail": "Brazil (4分, 净胜+3)",
-      "right_detail": "Sweden (3分, 净胜0)"
+      "right_detail": "Japan (4分, 净胜+4)"
     },
     {
       "match_number": 75,
@@ -166,13 +166,13 @@
       "left_rule": "E1",
       "right_rule": "A3/B3/C3/D3/F3",
       "left_source": "E1",
-      "right_source": "C3",
+      "right_source": "F3",
       "left_group": "E",
-      "right_group": "C",
+      "right_group": "F",
       "left_team": "Germany",
-      "right_team": "Scotland",
-      "left_detail": "Germany (3分, 净胜+6)",
-      "right_detail": "Scotland (3分, 净胜0)"
+      "right_team": "Sweden",
+      "left_detail": "Germany (6分, 净胜+7)",
+      "right_detail": "Sweden (3分, 净胜0)"
     },
     {
       "match_number": 76,
@@ -200,13 +200,13 @@
       "left_rule": "I1",
       "right_rule": "C3/D3/F3/G3/H3",
       "left_source": "I1",
-      "right_source": "D3",
+      "right_source": "C3",
       "left_group": "I",
-      "right_group": "D",
+      "right_group": "C",
       "left_team": "Norway",
-      "right_team": "Paraguay",
+      "right_team": "Scotland",
       "left_detail": "Norway (3分, 净胜+3)",
-      "right_detail": "Paraguay (3分, 净胜-2)"
+      "right_detail": "Scotland (3分, 净胜0)"
     },
     {
       "match_number": 78,
@@ -222,7 +222,7 @@
       "right_group": "I",
       "left_team": "Ivory Coast",
       "right_team": "France",
-      "left_detail": "Ivory Coast (3分, 净胜+1)",
+      "left_detail": "Ivory Coast (3分, 净胜0)",
       "right_detail": "France (3分, 净胜+2)"
     },
     {
@@ -234,13 +234,13 @@
       "left_rule": "A1",
       "right_rule": "C3/E3/F3/H3/I3",
       "left_source": "A1",
-      "right_source": "F3",
+      "right_source": "H3",
       "left_group": "A",
-      "right_group": "F",
+      "right_group": "H",
       "left_team": "Mexico",
-      "right_team": "Japan",
+      "right_team": "Spain",
       "left_detail": "Mexico (6分, 净胜+3)",
-      "right_detail": "Japan (1分, 净胜0)"
+      "right_detail": "Spain (1分, 净胜0)"
     },
     {
       "match_number": 80,
@@ -268,13 +268,13 @@
       "left_rule": "D1",
       "right_rule": "B3/E3/F3/I3/J3",
       "left_source": "D1",
-      "right_source": "B3",
+      "right_source": "E3",
       "left_group": "D",
-      "right_group": "B",
+      "right_group": "E",
       "left_team": "United States",
-      "right_team": "Bosnia-Herzegovina",
+      "right_team": "Ecuador",
       "left_detail": "United States (6分, 净胜+5)",
-      "right_detail": "Bosnia-Herzegovina (1分, 净胜-3)"
+      "right_detail": "Ecuador (1分, 净胜-1)"
     },
     {
       "match_number": 82,
@@ -285,13 +285,13 @@
       "left_rule": "G1",
       "right_rule": "A3/E3/H3/I3/J3",
       "left_source": "G1",
-      "right_source": "H3",
+      "right_source": "A3",
       "left_group": "G",
-      "right_group": "H",
+      "right_group": "A",
       "left_team": "New Zealand",
-      "right_team": "Spain",
+      "right_team": "Czechia",
       "left_detail": "New Zealand (1分, 净胜0)",
-      "right_detail": "Spain (1分, 净胜0)"
+      "right_detail": "Czechia (1分, 净胜-1)"
     },
     {
       "match_number": 83,
@@ -370,13 +370,13 @@
       "left_rule": "K1",
       "right_rule": "D3/E3/I3/J3/L3",
       "left_source": "K1",
-      "right_source": "D3/E3/I3/J3/L3",
+      "right_source": "D3",
       "left_group": "K",
-      "right_group": "",
+      "right_group": "D",
       "left_team": "Colombia",
-      "right_team": "待定第三名",
+      "right_team": "Paraguay",
       "left_detail": "Colombia (3分, 净胜+2)",
-      "right_detail": "D3/E3/I3/J3/L3"
+      "right_detail": "Paraguay (3分, 净胜-2)"
     },
     {
       "match_number": 88,
