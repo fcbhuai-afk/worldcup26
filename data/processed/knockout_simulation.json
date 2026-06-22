@@ -33,16 +33,26 @@
     },
     {
       "rank": 4,
-      "group": "G",
-      "team": "New Zealand",
-      "played": "1",
-      "points": "1",
+      "group": "H",
+      "team": "Cape Verde",
+      "played": "2",
+      "points": "2",
       "goal_difference": "0",
       "goals_for": "2",
       "status": "晋级区"
     },
     {
       "rank": 5,
+      "group": "G",
+      "team": "Belgium",
+      "played": "2",
+      "points": "2",
+      "goal_difference": "0",
+      "goals_for": "1",
+      "status": "晋级区"
+    },
+    {
+      "rank": 6,
       "group": "K",
       "team": "Portugal",
       "played": "1",
@@ -52,7 +62,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": "A",
       "team": "Czechia",
       "played": "2",
@@ -62,7 +72,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "group": "E",
       "team": "Ecuador",
       "played": "2",
@@ -72,23 +82,13 @@
       "status": "晋级区"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "group": "B",
       "team": "Bosnia-Herzegovina",
       "played": "2",
       "points": "1",
       "goal_difference": "-3",
       "goals_for": "2",
-      "status": "晋级区"
-    },
-    {
-      "rank": 9,
-      "group": "H",
-      "team": "Saudi Arabia",
-      "played": "2",
-      "points": "1",
-      "goal_difference": "-4",
-      "goals_for": "1",
       "status": "淘汰区"
     },
     {
@@ -234,13 +234,13 @@
       "left_rule": "A1",
       "right_rule": "C3/E3/F3/H3/I3",
       "left_source": "A1",
-      "right_source": "E3",
+      "right_source": "H3",
       "left_group": "A",
-      "right_group": "E",
+      "right_group": "H",
       "left_team": "Mexico",
-      "right_team": "Ecuador",
+      "right_team": "Cape Verde",
       "left_detail": "Mexico (6分, 净胜+3)",
-      "right_detail": "Ecuador (1分, 净胜-1)"
+      "right_detail": "Cape Verde (2分, 净胜0)"
     },
     {
       "match_number": 80,
@@ -268,13 +268,13 @@
       "left_rule": "D1",
       "right_rule": "B3/E3/F3/I3/J3",
       "left_source": "D1",
-      "right_source": "B3",
+      "right_source": "E3",
       "left_group": "D",
-      "right_group": "B",
+      "right_group": "E",
       "left_team": "United States",
-      "right_team": "Bosnia-Herzegovina",
+      "right_team": "Ecuador",
       "left_detail": "United States (6分, 净胜+5)",
-      "right_detail": "Bosnia-Herzegovina (1分, 净胜-3)"
+      "right_detail": "Ecuador (1分, 净胜-1)"
     },
     {
       "match_number": 82,
@@ -288,9 +288,9 @@
       "right_source": "A3",
       "left_group": "G",
       "right_group": "A",
-      "left_team": "Iran",
+      "left_team": "Egypt",
       "right_team": "Czechia",
-      "left_detail": "Iran (2分, 净胜0)",
+      "left_detail": "Egypt (4分, 净胜+2)",
       "right_detail": "Czechia (1分, 净胜-1)"
     },
     {
@@ -340,9 +340,9 @@
       "left_group": "B",
       "right_group": "G",
       "left_team": "Canada",
-      "right_team": "New Zealand",
+      "right_team": "Belgium",
       "left_detail": "Canada (4分, 净胜+6)",
-      "right_detail": "New Zealand (1分, 净胜0)"
+      "right_detail": "Belgium (2分, 净胜0)"
     },
     {
       "match_number": 86,
@@ -359,7 +359,7 @@
       "left_team": "Argentina",
       "right_team": "Uruguay",
       "left_detail": "Argentina (3分, 净胜+3)",
-      "right_detail": "Uruguay (1分, 净胜0)"
+      "right_detail": "Uruguay (2分, 净胜0)"
     },
     {
       "match_number": 87,
@@ -391,9 +391,9 @@
       "left_group": "D",
       "right_group": "G",
       "left_team": "Australia",
-      "right_team": "Belgium",
+      "right_team": "Iran",
       "left_detail": "Australia (3分, 净胜0)",
-      "right_detail": "Belgium (2分, 净胜0)"
+      "right_detail": "Iran (2分, 净胜0)"
     }
   ],
   "path": [

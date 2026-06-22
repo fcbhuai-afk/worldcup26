@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T21:59:30+00:00",
+  "updated_at": "2026-06-22T16:14:55+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -420,6 +420,146 @@
       "odds": {},
       "underdog_defensive_evidence": false,
       "updated_at": "2026-06-21T21:59:30+00:00"
+    },
+    "41": {
+      "weather": {
+        "temperature_c": 21.4,
+        "humidity_pct": 91,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-23T00:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760454/senegal-norway",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869186v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-22T16:14:55+00:00"
+    },
+    "42": {
+      "weather": {
+        "temperature_c": 30.8,
+        "humidity_pct": 42,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-22T21:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760457/iraq-france",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869185v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-22T16:14:55+00:00"
+    },
+    "43": {
+      "weather": {
+        "temperature_c": 30.4,
+        "humidity_pct": 73,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-22T17:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760456/austria-argentina",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869194v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-22T16:14:55+00:00"
+    },
+    "44": {
+      "weather": {
+        "temperature_c": 14.2,
+        "humidity_pct": 94,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-23T03:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760455/algeria-jordan",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869195v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-22T16:14:55+00:00"
     }
   }
 }
