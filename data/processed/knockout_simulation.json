@@ -64,7 +64,7 @@
     {
       "rank": 7,
       "group": "K",
-      "team": "Portugal",
+      "team": "Congo DR",
       "played": "1",
       "points": "1",
       "goal_difference": "0",
@@ -256,7 +256,7 @@
       "right_group": "J",
       "left_team": "England",
       "right_team": "Algeria",
-      "left_detail": "England (3分, 净胜+2)",
+      "left_detail": "England (4分, 净胜+2)",
       "right_detail": "Algeria (3分, 净胜-2)"
     },
     {
@@ -305,10 +305,10 @@
       "right_source": "L2",
       "left_group": "K",
       "right_group": "L",
-      "left_team": "Congo DR",
+      "left_team": "Colombia",
       "right_team": "Ghana",
-      "left_detail": "Congo DR (1分, 净胜0)",
-      "right_detail": "Ghana (3分, 净胜+1)"
+      "left_detail": "Colombia (3分, 净胜+2)",
+      "right_detail": "Ghana (4分, 净胜+1)"
     },
     {
       "match_number": 84,
@@ -373,9 +373,9 @@
       "right_source": "D3",
       "left_group": "K",
       "right_group": "D",
-      "left_team": "Colombia",
+      "left_team": "Portugal",
       "right_team": "Paraguay",
-      "left_detail": "Colombia (3分, 净胜+2)",
+      "left_detail": "Portugal (4分, 净胜+5)",
       "right_detail": "Paraguay (3分, 净胜-2)"
     },
     {
