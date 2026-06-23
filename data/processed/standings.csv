@@ -31,14 +31,14 @@ H,1,Spain,164,ESP,2,1,1,0,4,0,+4,4,Advance to Round of 32,ESPN standings API
 H,2,Uruguay,212,URU,2,0,2,0,3,3,0,2,Advance to Round of 32,ESPN standings API
 H,3,Cape Verde,2597,CPV,2,0,2,0,2,2,0,2,Best 8 advance,ESPN standings API
 H,4,Saudi Arabia,655,KSA,2,0,1,1,1,5,-4,1,Eliminated,ESPN standings API
-I,1,Norway,464,NOR,1,1,0,0,4,1,+3,3,Advance to Round of 32,ESPN standings API
-I,2,France,478,FRA,1,1,0,0,3,1,+2,3,Advance to Round of 32,ESPN standings API
-I,3,Senegal,654,SEN,1,0,0,1,1,3,-2,0,Best 8 advance,ESPN standings API
-I,4,Iraq,4375,IRQ,1,0,0,1,1,4,-3,0,Eliminated,ESPN standings API
+I,1,France,478,FRA,2,2,0,0,6,1,+5,6,Advance to Round of 32,ESPN standings API
+I,2,Norway,464,NOR,2,2,0,0,7,3,+4,6,Advance to Round of 32,ESPN standings API
+I,3,Senegal,654,SEN,2,0,0,2,3,6,-3,0,Best 8 advance,ESPN standings API
+I,4,Iraq,4375,IRQ,2,0,0,2,1,7,-6,0,Eliminated,ESPN standings API
 J,1,Argentina,202,ARG,2,2,0,0,5,0,+5,6,Advance to Round of 32,ESPN standings API
 J,2,Austria,474,AUT,2,1,0,1,3,3,0,3,Advance to Round of 32,ESPN standings API
-J,3,Jordan,2917,JOR,1,0,0,1,1,3,-2,0,Best 8 advance,ESPN standings API
-J,4,Algeria,624,ALG,1,0,0,1,0,3,-3,0,Eliminated,ESPN standings API
+J,3,Algeria,624,ALG,2,1,0,1,2,4,-2,3,Best 8 advance,ESPN standings API
+J,4,Jordan,2917,JOR,2,0,0,2,2,5,-3,0,Eliminated,ESPN standings API
 K,1,Colombia,208,COL,1,1,0,0,3,1,+2,3,Advance to Round of 32,ESPN standings API
 K,2,Congo DR,2850,COD,1,0,1,0,1,1,0,1,Advance to Round of 32,ESPN standings API
 K,3,Portugal,482,POR,1,0,1,0,1,1,0,1,Best 8 advance,ESPN standings API

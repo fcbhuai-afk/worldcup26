@@ -33,6 +33,16 @@
     },
     {
       "rank": 4,
+      "group": "J",
+      "team": "Algeria",
+      "played": "2",
+      "points": "3",
+      "goal_difference": "-2",
+      "goals_for": "2",
+      "status": "晋级区"
+    },
+    {
+      "rank": 5,
       "group": "H",
       "team": "Cape Verde",
       "played": "2",
@@ -42,7 +52,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": "G",
       "team": "Belgium",
       "played": "2",
@@ -52,7 +62,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": "K",
       "team": "Portugal",
       "played": "1",
@@ -62,7 +72,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "group": "A",
       "team": "Czechia",
       "played": "2",
@@ -72,17 +82,17 @@
       "status": "晋级区"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "group": "E",
       "team": "Ecuador",
       "played": "2",
       "points": "1",
       "goal_difference": "-1",
       "goals_for": "0",
-      "status": "晋级区"
+      "status": "淘汰区"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "group": "B",
       "team": "Bosnia-Herzegovina",
       "played": "2",
@@ -92,7 +102,7 @@
       "status": "淘汰区"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "group": "L",
       "team": "Panama",
       "played": "1",
@@ -102,23 +112,13 @@
       "status": "淘汰区"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "group": "I",
       "team": "Senegal",
-      "played": "1",
+      "played": "2",
       "points": "0",
-      "goal_difference": "-2",
-      "goals_for": "1",
-      "status": "淘汰区"
-    },
-    {
-      "rank": 12,
-      "group": "J",
-      "team": "Jordan",
-      "played": "1",
-      "points": "0",
-      "goal_difference": "-2",
-      "goals_for": "1",
+      "goal_difference": "-3",
+      "goals_for": "3",
       "status": "淘汰区"
     }
   ],
@@ -203,9 +203,9 @@
       "right_source": "C3",
       "left_group": "I",
       "right_group": "C",
-      "left_team": "Norway",
+      "left_team": "France",
       "right_team": "Scotland",
-      "left_detail": "Norway (3分, 净胜+3)",
+      "left_detail": "France (6分, 净胜+5)",
       "right_detail": "Scotland (3分, 净胜0)"
     },
     {
@@ -221,9 +221,9 @@
       "left_group": "E",
       "right_group": "I",
       "left_team": "Ivory Coast",
-      "right_team": "France",
+      "right_team": "Norway",
       "left_detail": "Ivory Coast (3分, 净胜0)",
-      "right_detail": "France (3分, 净胜+2)"
+      "right_detail": "Norway (6分, 净胜+4)"
     },
     {
       "match_number": 79,
@@ -251,13 +251,13 @@
       "left_rule": "L1",
       "right_rule": "E3/H3/I3/J3/K3",
       "left_source": "L1",
-      "right_source": "K3",
+      "right_source": "J3",
       "left_group": "L",
-      "right_group": "K",
+      "right_group": "J",
       "left_team": "England",
-      "right_team": "Portugal",
+      "right_team": "Algeria",
       "left_detail": "England (3分, 净胜+2)",
-      "right_detail": "Portugal (1分, 净胜0)"
+      "right_detail": "Algeria (3分, 净胜-2)"
     },
     {
       "match_number": 81,
@@ -268,13 +268,13 @@
       "left_rule": "D1",
       "right_rule": "B3/E3/F3/I3/J3",
       "left_source": "D1",
-      "right_source": "E3",
+      "right_source": "B3/E3/F3/I3/J3",
       "left_group": "D",
-      "right_group": "E",
+      "right_group": "",
       "left_team": "United States",
-      "right_team": "Ecuador",
+      "right_team": "待定第三名",
       "left_detail": "United States (6分, 净胜+5)",
-      "right_detail": "Ecuador (1分, 净胜-1)"
+      "right_detail": "B3/E3/F3/I3/J3"
     },
     {
       "match_number": 82,
