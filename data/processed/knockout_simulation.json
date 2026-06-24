@@ -23,6 +23,16 @@
     },
     {
       "rank": 3,
+      "group": "L",
+      "team": "Croatia",
+      "played": "2",
+      "points": "3",
+      "goal_difference": "-1",
+      "goals_for": "3",
+      "status": "晋级区"
+    },
+    {
+      "rank": 4,
       "group": "D",
       "team": "Paraguay",
       "played": "2",
@@ -32,7 +42,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "group": "J",
       "team": "Algeria",
       "played": "2",
@@ -42,7 +52,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": "H",
       "team": "Cape Verde",
       "played": "2",
@@ -52,21 +62,11 @@
       "status": "晋级区"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": "G",
       "team": "Belgium",
       "played": "2",
       "points": "2",
-      "goal_difference": "0",
-      "goals_for": "1",
-      "status": "晋级区"
-    },
-    {
-      "rank": 7,
-      "group": "K",
-      "team": "Congo DR",
-      "played": "1",
-      "points": "1",
       "goal_difference": "0",
       "goals_for": "1",
       "status": "晋级区"
@@ -83,6 +83,16 @@
     },
     {
       "rank": 9,
+      "group": "K",
+      "team": "Congo DR",
+      "played": "2",
+      "points": "1",
+      "goal_difference": "-1",
+      "goals_for": "1",
+      "status": "淘汰区"
+    },
+    {
+      "rank": 10,
       "group": "E",
       "team": "Ecuador",
       "played": "2",
@@ -92,23 +102,13 @@
       "status": "淘汰区"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "group": "B",
       "team": "Bosnia-Herzegovina",
       "played": "2",
       "points": "1",
       "goal_difference": "-3",
       "goals_for": "2",
-      "status": "淘汰区"
-    },
-    {
-      "rank": 11,
-      "group": "L",
-      "team": "Panama",
-      "played": "1",
-      "points": "0",
-      "goal_difference": "-1",
-      "goals_for": "0",
       "status": "淘汰区"
     },
     {
@@ -305,9 +305,9 @@
       "right_source": "L2",
       "left_group": "K",
       "right_group": "L",
-      "left_team": "Colombia",
+      "left_team": "Portugal",
       "right_team": "Ghana",
-      "left_detail": "Colombia (3分, 净胜+2)",
+      "left_detail": "Portugal (4分, 净胜+5)",
       "right_detail": "Ghana (4分, 净胜+1)"
     },
     {
@@ -370,13 +370,13 @@
       "left_rule": "K1",
       "right_rule": "D3/E3/I3/J3/L3",
       "left_source": "K1",
-      "right_source": "D3",
+      "right_source": "L3",
       "left_group": "K",
-      "right_group": "D",
-      "left_team": "Portugal",
-      "right_team": "Paraguay",
-      "left_detail": "Portugal (4分, 净胜+5)",
-      "right_detail": "Paraguay (3分, 净胜-2)"
+      "right_group": "L",
+      "left_team": "Colombia",
+      "right_team": "Croatia",
+      "left_detail": "Colombia (6分, 净胜+3)",
+      "right_detail": "Croatia (3分, 净胜-1)"
     },
     {
       "match_number": 88,

@@ -1,13 +1,13 @@
 ﻿rank,group,team,played,points,goal_difference,goals_for,status
 1,F,Sweden,2,3,0,6,晋级区
 2,C,Scotland,2,3,0,1,晋级区
-3,D,Paraguay,2,3,-2,2,晋级区
-4,J,Algeria,2,3,-2,2,晋级区
-5,H,Cape Verde,2,2,0,2,晋级区
-6,G,Belgium,2,2,0,1,晋级区
-7,K,Congo DR,1,1,0,1,晋级区
+3,L,Croatia,2,3,-1,3,晋级区
+4,D,Paraguay,2,3,-2,2,晋级区
+5,J,Algeria,2,3,-2,2,晋级区
+6,H,Cape Verde,2,2,0,2,晋级区
+7,G,Belgium,2,2,0,1,晋级区
 8,A,Czechia,2,1,-1,2,晋级区
-9,E,Ecuador,2,1,-1,0,淘汰区
-10,B,Bosnia-Herzegovina,2,1,-3,2,淘汰区
-11,L,Panama,1,0,-1,0,淘汰区
+9,K,Congo DR,2,1,-1,1,淘汰区
+10,E,Ecuador,2,1,-1,0,淘汰区
+11,B,Bosnia-Herzegovina,2,1,-3,2,淘汰区
 12,I,Senegal,2,0,-3,3,淘汰区
