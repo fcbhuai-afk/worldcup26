@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T10:28:47+00:00",
+  "updated_at": "2026-06-24T17:30:54+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -703,8 +703,8 @@
     },
     "49": {
       "weather": {
-        "temperature_c": 30.7,
-        "humidity_pct": 60,
+        "temperature_c": 30.6,
+        "humidity_pct": 66,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-24T22:00:00Z"
@@ -734,12 +734,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-24T10:28:47+00:00"
+      "updated_at": "2026-06-24T17:30:54+00:00"
     },
     "50": {
       "weather": {
-        "temperature_c": 30.6,
-        "humidity_pct": 33,
+        "temperature_c": 30.7,
+        "humidity_pct": 34,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-24T22:00:00Z"
@@ -769,12 +769,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-24T10:28:47+00:00"
+      "updated_at": "2026-06-24T17:30:54+00:00"
     },
     "51": {
       "weather": {
-        "temperature_c": 25.8,
-        "humidity_pct": 55,
+        "temperature_c": 25.3,
+        "humidity_pct": 52,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-24T19:00:00Z"
@@ -804,12 +804,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-24T10:28:47+00:00"
+      "updated_at": "2026-06-24T17:30:54+00:00"
     },
     "52": {
       "weather": {
-        "temperature_c": 26.7,
-        "humidity_pct": 40,
+        "temperature_c": 25.5,
+        "humidity_pct": 41,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-24T19:00:00Z"
@@ -839,7 +839,77 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-24T10:28:47+00:00"
+      "updated_at": "2026-06-24T17:30:54+00:00"
+    },
+    "53": {
+      "weather": {
+        "temperature_c": 16.2,
+        "humidity_pct": 85,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-25T01:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760467/mexico-czechia",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1867429v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-24T17:30:54+00:00"
+    },
+    "54": {
+      "weather": {
+        "temperature_c": 31.1,
+        "humidity_pct": 46,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-06-25T01:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "ESPN",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760466/south-korea-south-africa",
+          "status": "赛程与赛果"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1869144v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-06-24T17:30:54+00:00"
     }
   }
 }
