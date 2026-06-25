@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-25T17:33:48+00:00",
+  "updated_at": "2026-06-25T22:56:15+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -983,7 +983,7 @@
     },
     "57": {
       "weather": {
-        "temperature_c": 33.2,
+        "temperature_c": 33.4,
         "humidity_pct": 47,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
@@ -1014,12 +1014,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-25T17:33:48+00:00"
+      "updated_at": "2026-06-25T22:56:15+00:00"
     },
     "58": {
       "weather": {
-        "temperature_c": 22.2,
-        "humidity_pct": 90,
+        "temperature_c": 22.1,
+        "humidity_pct": 88,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-25T23:00:00Z"
@@ -1049,12 +1049,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-25T17:33:48+00:00"
+      "updated_at": "2026-06-25T22:56:15+00:00"
     },
     "59": {
       "weather": {
-        "temperature_c": 20.4,
-        "humidity_pct": 70,
+        "temperature_c": 20.1,
+        "humidity_pct": 69,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-26T02:00:00Z"
@@ -1084,12 +1084,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-25T17:33:48+00:00"
+      "updated_at": "2026-06-25T22:56:15+00:00"
     },
     "60": {
       "weather": {
-        "temperature_c": 15.2,
-        "humidity_pct": 78,
+        "temperature_c": 14.9,
+        "humidity_pct": 79,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-06-26T02:00:00Z"
@@ -1119,7 +1119,7 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-06-25T17:33:48+00:00"
+      "updated_at": "2026-06-25T22:56:15+00:00"
     }
   }
 }

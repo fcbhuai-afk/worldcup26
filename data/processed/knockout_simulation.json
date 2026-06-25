@@ -3,6 +3,16 @@
   "third_place": [
     {
       "rank": 1,
+      "group": "E",
+      "team": "Ecuador",
+      "played": "3",
+      "points": "4",
+      "goal_difference": "0",
+      "goals_for": "2",
+      "status": "晋级区"
+    },
+    {
+      "rank": 2,
       "group": "B",
       "team": "Bosnia-Herzegovina",
       "played": "3",
@@ -12,7 +22,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "group": "F",
       "team": "Sweden",
       "played": "2",
@@ -22,7 +32,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "group": "L",
       "team": "Croatia",
       "played": "2",
@@ -32,7 +42,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "group": "A",
       "team": "South Korea",
       "played": "3",
@@ -42,7 +52,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": "D",
       "team": "Paraguay",
       "played": "2",
@@ -52,7 +62,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": "J",
       "team": "Algeria",
       "played": "2",
@@ -62,7 +72,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "group": "C",
       "team": "Scotland",
       "played": "3",
@@ -72,17 +82,17 @@
       "status": "晋级区"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "group": "H",
       "team": "Cape Verde",
       "played": "2",
       "points": "2",
       "goal_difference": "0",
       "goals_for": "2",
-      "status": "晋级区"
+      "status": "淘汰区"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "group": "G",
       "team": "Belgium",
       "played": "2",
@@ -92,23 +102,13 @@
       "status": "淘汰区"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "group": "K",
       "team": "Congo DR",
       "played": "2",
       "points": "1",
       "goal_difference": "-1",
       "goals_for": "1",
-      "status": "淘汰区"
-    },
-    {
-      "rank": 11,
-      "group": "E",
-      "team": "Ecuador",
-      "played": "2",
-      "points": "1",
-      "goal_difference": "-1",
-      "goals_for": "0",
       "status": "淘汰区"
     },
     {
@@ -171,7 +171,7 @@
       "right_group": "B",
       "left_team": "Germany",
       "right_team": "Bosnia-Herzegovina",
-      "left_detail": "Germany (6分, 净胜+7)",
+      "left_detail": "Germany (6分, 净胜+6)",
       "right_detail": "Bosnia-Herzegovina (4分, 净胜-1)"
     },
     {
@@ -222,7 +222,7 @@
       "right_group": "I",
       "left_team": "Ivory Coast",
       "right_team": "Norway",
-      "left_detail": "Ivory Coast (3分, 净胜0)",
+      "left_detail": "Ivory Coast (6分, 净胜+2)",
       "right_detail": "Norway (6分, 净胜+4)"
     },
     {
@@ -234,13 +234,13 @@
       "left_rule": "A1",
       "right_rule": "C3/E3/F3/H3/I3",
       "left_source": "A1",
-      "right_source": "C3",
+      "right_source": "E3",
       "left_group": "A",
-      "right_group": "C",
+      "right_group": "E",
       "left_team": "Mexico",
-      "right_team": "Scotland",
+      "right_team": "Ecuador",
       "left_detail": "Mexico (9分, 净胜+6)",
-      "right_detail": "Scotland (3分, 净胜-3)"
+      "right_detail": "Ecuador (4分, 净胜0)"
     },
     {
       "match_number": 80,
