@@ -23,22 +23,22 @@
     },
     {
       "rank": 3,
-      "group": "C",
-      "team": "Scotland",
-      "played": "2",
-      "points": "3",
-      "goal_difference": "0",
-      "goals_for": "1",
-      "status": "晋级区"
-    },
-    {
-      "rank": 4,
       "group": "L",
       "team": "Croatia",
       "played": "2",
       "points": "3",
       "goal_difference": "-1",
       "goals_for": "3",
+      "status": "晋级区"
+    },
+    {
+      "rank": 4,
+      "group": "A",
+      "team": "South Korea",
+      "played": "3",
+      "points": "3",
+      "goal_difference": "-1",
+      "goals_for": "2",
       "status": "晋级区"
     },
     {
@@ -63,6 +63,16 @@
     },
     {
       "rank": 7,
+      "group": "C",
+      "team": "Scotland",
+      "played": "3",
+      "points": "3",
+      "goal_difference": "-3",
+      "goals_for": "1",
+      "status": "晋级区"
+    },
+    {
+      "rank": 8,
       "group": "H",
       "team": "Cape Verde",
       "played": "2",
@@ -72,23 +82,13 @@
       "status": "晋级区"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "group": "G",
       "team": "Belgium",
       "played": "2",
       "points": "2",
       "goal_difference": "0",
       "goals_for": "1",
-      "status": "晋级区"
-    },
-    {
-      "rank": 9,
-      "group": "A",
-      "team": "Czechia",
-      "played": "2",
-      "points": "1",
-      "goal_difference": "-1",
-      "goals_for": "2",
       "status": "淘汰区"
     },
     {
@@ -135,9 +135,9 @@
       "right_source": "B2",
       "left_group": "A",
       "right_group": "B",
-      "left_team": "South Korea",
+      "left_team": "South Africa",
       "right_team": "Canada",
-      "left_detail": "South Korea (3分, 净胜0)",
+      "left_detail": "South Africa (4分, 净胜-1)",
       "right_detail": "Canada (4分, 净胜+5)"
     },
     {
@@ -154,7 +154,7 @@
       "right_group": "F",
       "left_team": "Brazil",
       "right_team": "Japan",
-      "left_detail": "Brazil (4分, 净胜+3)",
+      "left_detail": "Brazil (7分, 净胜+6)",
       "right_detail": "Japan (4分, 净胜+4)"
     },
     {
@@ -189,7 +189,7 @@
       "left_team": "Netherlands",
       "right_team": "Morocco",
       "left_detail": "Netherlands (4分, 净胜+4)",
-      "right_detail": "Morocco (4分, 净胜+1)"
+      "right_detail": "Morocco (7分, 净胜+3)"
     },
     {
       "match_number": 77,
@@ -239,8 +239,8 @@
       "right_group": "C",
       "left_team": "Mexico",
       "right_team": "Scotland",
-      "left_detail": "Mexico (6分, 净胜+3)",
-      "right_detail": "Scotland (3分, 净胜0)"
+      "left_detail": "Mexico (9分, 净胜+6)",
+      "right_detail": "Scotland (3分, 净胜-3)"
     },
     {
       "match_number": 80,
@@ -285,13 +285,13 @@
       "left_rule": "G1",
       "right_rule": "A3/E3/H3/I3/J3",
       "left_source": "G1",
-      "right_source": "H3",
+      "right_source": "A3",
       "left_group": "G",
-      "right_group": "H",
+      "right_group": "A",
       "left_team": "Egypt",
-      "right_team": "Cape Verde",
+      "right_team": "South Korea",
       "left_detail": "Egypt (4分, 净胜+2)",
-      "right_detail": "Cape Verde (2分, 净胜0)"
+      "right_detail": "South Korea (3分, 净胜-1)"
     },
     {
       "match_number": 83,
@@ -336,13 +336,13 @@
       "left_rule": "B1",
       "right_rule": "E3/F3/G3/I3/J3",
       "left_source": "B1",
-      "right_source": "G3",
+      "right_source": "E3/F3/G3/I3/J3",
       "left_group": "B",
-      "right_group": "G",
+      "right_group": "",
       "left_team": "Switzerland",
-      "right_team": "Belgium",
+      "right_team": "待定第三名",
       "left_detail": "Switzerland (7分, 净胜+4)",
-      "right_detail": "Belgium (2分, 净胜0)"
+      "right_detail": "E3/F3/G3/I3/J3"
     },
     {
       "match_number": 86,
