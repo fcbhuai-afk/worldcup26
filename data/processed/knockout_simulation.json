@@ -43,6 +43,16 @@
     },
     {
       "rank": 5,
+      "group": "I",
+      "team": "Senegal",
+      "played": "3",
+      "points": "3",
+      "goal_difference": "+2",
+      "goals_for": "8",
+      "status": "晋级区"
+    },
+    {
+      "rank": 6,
       "group": "L",
       "team": "Croatia",
       "played": "2",
@@ -52,7 +62,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": "A",
       "team": "South Korea",
       "played": "3",
@@ -62,7 +72,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "group": "J",
       "team": "Algeria",
       "played": "2",
@@ -72,17 +82,17 @@
       "status": "晋级区"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "group": "C",
       "team": "Scotland",
       "played": "3",
       "points": "3",
       "goal_difference": "-3",
       "goals_for": "1",
-      "status": "晋级区"
+      "status": "淘汰区"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "group": "H",
       "team": "Cape Verde",
       "played": "2",
@@ -92,7 +102,7 @@
       "status": "淘汰区"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "group": "G",
       "team": "Belgium",
       "played": "2",
@@ -102,23 +112,13 @@
       "status": "淘汰区"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "group": "K",
       "team": "Congo DR",
       "played": "2",
       "points": "1",
       "goal_difference": "-1",
       "goals_for": "1",
-      "status": "淘汰区"
-    },
-    {
-      "rank": 12,
-      "group": "I",
-      "team": "Senegal",
-      "played": "2",
-      "points": "0",
-      "goal_difference": "-3",
-      "goals_for": "3",
       "status": "淘汰区"
     }
   ],
@@ -205,7 +205,7 @@
       "right_group": "D",
       "left_team": "France",
       "right_team": "Paraguay",
-      "left_detail": "France (6分, 净胜+5)",
+      "left_detail": "France (9分, 净胜+8)",
       "right_detail": "Paraguay (4分, 净胜-2)"
     },
     {
@@ -223,7 +223,7 @@
       "left_team": "Ivory Coast",
       "right_team": "Norway",
       "left_detail": "Ivory Coast (6分, 净胜+2)",
-      "right_detail": "Norway (6分, 净胜+4)"
+      "right_detail": "Norway (6分, 净胜+1)"
     },
     {
       "match_number": 79,
@@ -251,13 +251,13 @@
       "left_rule": "L1",
       "right_rule": "E3/H3/I3/J3/K3",
       "left_source": "L1",
-      "right_source": "J3",
+      "right_source": "I3",
       "left_group": "L",
-      "right_group": "J",
+      "right_group": "I",
       "left_team": "England",
-      "right_team": "Algeria",
+      "right_team": "Senegal",
       "left_detail": "England (4分, 净胜+2)",
-      "right_detail": "Algeria (3分, 净胜-2)"
+      "right_detail": "Senegal (3分, 净胜+2)"
     },
     {
       "match_number": 81,
@@ -336,13 +336,13 @@
       "left_rule": "B1",
       "right_rule": "E3/F3/G3/I3/J3",
       "left_source": "B1",
-      "right_source": "E3/F3/G3/I3/J3",
+      "right_source": "J3",
       "left_group": "B",
-      "right_group": "",
+      "right_group": "J",
       "left_team": "Switzerland",
-      "right_team": "待定第三名",
+      "right_team": "Algeria",
       "left_detail": "Switzerland (7分, 净胜+4)",
-      "right_detail": "E3/F3/G3/I3/J3"
+      "right_detail": "Algeria (3分, 净胜-2)"
     },
     {
       "match_number": 86,
