@@ -3,6 +3,16 @@
   "third_place": [
     {
       "rank": 1,
+      "group": "F",
+      "team": "Sweden",
+      "played": "3",
+      "points": "4",
+      "goal_difference": "0",
+      "goals_for": "7",
+      "status": "晋级区"
+    },
+    {
+      "rank": 2,
       "group": "E",
       "team": "Ecuador",
       "played": "3",
@@ -12,7 +22,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "group": "B",
       "team": "Bosnia-Herzegovina",
       "played": "3",
@@ -22,17 +32,17 @@
       "status": "晋级区"
     },
     {
-      "rank": 3,
-      "group": "F",
-      "team": "Sweden",
-      "played": "2",
-      "points": "3",
-      "goal_difference": "0",
-      "goals_for": "6",
+      "rank": 4,
+      "group": "D",
+      "team": "Paraguay",
+      "played": "3",
+      "points": "4",
+      "goal_difference": "-2",
+      "goals_for": "2",
       "status": "晋级区"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "group": "L",
       "team": "Croatia",
       "played": "2",
@@ -42,22 +52,12 @@
       "status": "晋级区"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": "A",
       "team": "South Korea",
       "played": "3",
       "points": "3",
       "goal_difference": "-1",
-      "goals_for": "2",
-      "status": "晋级区"
-    },
-    {
-      "rank": 6,
-      "group": "D",
-      "team": "Paraguay",
-      "played": "2",
-      "points": "3",
-      "goal_difference": "-2",
       "goals_for": "2",
       "status": "晋级区"
     },
@@ -155,7 +155,7 @@
       "left_team": "Brazil",
       "right_team": "Japan",
       "left_detail": "Brazil (7分, 净胜+6)",
-      "right_detail": "Japan (4分, 净胜+4)"
+      "right_detail": "Japan (5分, 净胜+4)"
     },
     {
       "match_number": 75,
@@ -166,13 +166,13 @@
       "left_rule": "E1",
       "right_rule": "A3/B3/C3/D3/F3",
       "left_source": "E1",
-      "right_source": "B3",
+      "right_source": "F3",
       "left_group": "E",
-      "right_group": "B",
+      "right_group": "F",
       "left_team": "Germany",
-      "right_team": "Bosnia-Herzegovina",
+      "right_team": "Sweden",
       "left_detail": "Germany (6分, 净胜+6)",
-      "right_detail": "Bosnia-Herzegovina (4分, 净胜-1)"
+      "right_detail": "Sweden (4分, 净胜0)"
     },
     {
       "match_number": 76,
@@ -188,7 +188,7 @@
       "right_group": "C",
       "left_team": "Netherlands",
       "right_team": "Morocco",
-      "left_detail": "Netherlands (4分, 净胜+4)",
+      "left_detail": "Netherlands (7分, 净胜+6)",
       "right_detail": "Morocco (7分, 净胜+3)"
     },
     {
@@ -200,13 +200,13 @@
       "left_rule": "I1",
       "right_rule": "C3/D3/F3/G3/H3",
       "left_source": "I1",
-      "right_source": "F3",
+      "right_source": "D3",
       "left_group": "I",
-      "right_group": "F",
+      "right_group": "D",
       "left_team": "France",
-      "right_team": "Sweden",
+      "right_team": "Paraguay",
       "left_detail": "France (6分, 净胜+5)",
-      "right_detail": "Sweden (3分, 净胜0)"
+      "right_detail": "Paraguay (4分, 净胜-2)"
     },
     {
       "match_number": 78,
@@ -268,13 +268,13 @@
       "left_rule": "D1",
       "right_rule": "B3/E3/F3/I3/J3",
       "left_source": "D1",
-      "right_source": "B3/E3/F3/I3/J3",
+      "right_source": "B3",
       "left_group": "D",
-      "right_group": "",
+      "right_group": "B",
       "left_team": "United States",
-      "right_team": "待定第三名",
-      "left_detail": "United States (6分, 净胜+5)",
-      "right_detail": "B3/E3/F3/I3/J3"
+      "right_team": "Bosnia-Herzegovina",
+      "left_detail": "United States (6分, 净胜+4)",
+      "right_detail": "Bosnia-Herzegovina (4分, 净胜-1)"
     },
     {
       "match_number": 82,
@@ -392,7 +392,7 @@
       "right_group": "G",
       "left_team": "Australia",
       "right_team": "Iran",
-      "left_detail": "Australia (3分, 净胜0)",
+      "left_detail": "Australia (4分, 净胜0)",
       "right_detail": "Iran (2分, 净胜0)"
     }
   ],

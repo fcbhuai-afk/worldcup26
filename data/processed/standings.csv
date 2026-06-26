@@ -11,18 +11,18 @@ C,1,Brazil,205,BRA,3,2,1,0,7,1,+6,7,Advance to Round of 32,ESPN standings API
 C,2,Morocco,2869,MAR,3,2,1,0,6,3,+3,7,Advance to Round of 32,ESPN standings API
 C,3,Scotland,580,SCO,3,1,0,2,1,4,-3,3,Best 8 advance,ESPN standings API
 C,4,Haiti,2654,HAI,3,0,0,3,2,8,-6,0,Eliminated,ESPN standings API
-D,1,United States,660,USA,2,2,0,0,6,1,+5,6,Advance to Round of 32,ESPN standings API
-D,2,Australia,628,AUS,2,1,0,1,2,2,0,3,Advance to Round of 32,ESPN standings API
-D,3,Paraguay,210,PAR,2,1,0,1,2,4,-2,3,Best 8 advance,ESPN standings API
-D,4,Türkiye,465,TUR,2,0,0,2,0,3,-3,0,Eliminated,ESPN standings API
+D,1,United States,660,USA,3,2,0,1,8,4,+4,6,Advance to Round of 32,ESPN standings API
+D,2,Australia,628,AUS,3,1,1,1,2,2,0,4,Advance to Round of 32,ESPN standings API
+D,3,Paraguay,210,PAR,3,1,1,1,2,4,-2,4,Best 8 advance,ESPN standings API
+D,4,Türkiye,465,TUR,3,1,0,2,3,5,-2,3,Eliminated,ESPN standings API
 E,1,Germany,481,GER,3,2,0,1,10,4,+6,6,Advance to Round of 32,ESPN standings API
 E,2,Ivory Coast,4789,CIV,3,2,0,1,4,2,+2,6,Advance to Round of 32,ESPN standings API
 E,3,Ecuador,209,ECU,3,1,1,1,2,2,0,4,Best 8 advance,ESPN standings API
 E,4,Curaçao,11678,CUW,3,0,1,2,1,9,-8,1,Eliminated,ESPN standings API
-F,1,Netherlands,449,NED,2,1,1,0,7,3,+4,4,Advance to Round of 32,ESPN standings API
-F,2,Japan,627,JPN,2,1,1,0,6,2,+4,4,Advance to Round of 32,ESPN standings API
-F,3,Sweden,466,SWE,2,1,0,1,6,6,0,3,Best 8 advance,ESPN standings API
-F,4,Tunisia,659,TUN,2,0,0,2,1,9,-8,0,Eliminated,ESPN standings API
+F,1,Netherlands,449,NED,3,2,1,0,10,4,+6,7,Advance to Round of 32,ESPN standings API
+F,2,Japan,627,JPN,3,1,2,0,7,3,+4,5,Advance to Round of 32,ESPN standings API
+F,3,Sweden,466,SWE,3,1,1,1,7,7,0,4,Best 8 advance,ESPN standings API
+F,4,Tunisia,659,TUN,3,0,0,3,2,12,-10,0,Eliminated,ESPN standings API
 G,1,Egypt,2620,EGY,2,1,1,0,4,2,+2,4,Advance to Round of 32,ESPN standings API
 G,2,Iran,469,IRN,2,0,2,0,2,2,0,2,Advance to Round of 32,ESPN standings API
 G,3,Belgium,459,BEL,2,0,2,0,1,1,0,2,Best 8 advance,ESPN standings API
