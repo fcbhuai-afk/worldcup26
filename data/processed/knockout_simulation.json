@@ -53,6 +53,16 @@
     },
     {
       "rank": 6,
+      "group": "G",
+      "team": "Iran",
+      "played": "3",
+      "points": "3",
+      "goal_difference": "0",
+      "goals_for": "3",
+      "status": "晋级区"
+    },
+    {
+      "rank": 7,
       "group": "L",
       "team": "Croatia",
       "played": "2",
@@ -62,7 +72,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "group": "A",
       "team": "South Korea",
       "played": "3",
@@ -72,17 +82,17 @@
       "status": "晋级区"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "group": "J",
       "team": "Algeria",
       "played": "2",
       "points": "3",
       "goal_difference": "-2",
       "goals_for": "2",
-      "status": "晋级区"
+      "status": "淘汰区"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "group": "C",
       "team": "Scotland",
       "played": "3",
@@ -92,23 +102,13 @@
       "status": "淘汰区"
     },
     {
-      "rank": 10,
-      "group": "H",
-      "team": "Cape Verde",
-      "played": "2",
-      "points": "2",
-      "goal_difference": "0",
-      "goals_for": "2",
-      "status": "淘汰区"
-    },
-    {
       "rank": 11,
-      "group": "G",
-      "team": "Belgium",
-      "played": "2",
+      "group": "H",
+      "team": "Uruguay",
+      "played": "3",
       "points": "2",
-      "goal_difference": "0",
-      "goals_for": "1",
+      "goal_difference": "-1",
+      "goals_for": "3",
       "status": "淘汰区"
     },
     {
@@ -288,9 +288,9 @@
       "right_source": "A3",
       "left_group": "G",
       "right_group": "A",
-      "left_team": "Egypt",
+      "left_team": "Belgium",
       "right_team": "South Korea",
-      "left_detail": "Egypt (4分, 净胜+2)",
+      "left_detail": "Belgium (5分, 净胜+4)",
       "right_detail": "South Korea (3分, 净胜-1)"
     },
     {
@@ -324,7 +324,7 @@
       "right_group": "J",
       "left_team": "Spain",
       "right_team": "Austria",
-      "left_detail": "Spain (4分, 净胜+4)",
+      "left_detail": "Spain (7分, 净胜+5)",
       "right_detail": "Austria (3分, 净胜0)"
     },
     {
@@ -336,13 +336,13 @@
       "left_rule": "B1",
       "right_rule": "E3/F3/G3/I3/J3",
       "left_source": "B1",
-      "right_source": "J3",
+      "right_source": "G3",
       "left_group": "B",
-      "right_group": "J",
+      "right_group": "G",
       "left_team": "Switzerland",
-      "right_team": "Algeria",
+      "right_team": "Iran",
       "left_detail": "Switzerland (7分, 净胜+4)",
-      "right_detail": "Algeria (3分, 净胜-2)"
+      "right_detail": "Iran (3分, 净胜0)"
     },
     {
       "match_number": 86,
@@ -357,9 +357,9 @@
       "left_group": "J",
       "right_group": "H",
       "left_team": "Argentina",
-      "right_team": "Uruguay",
+      "right_team": "Cape Verde",
       "left_detail": "Argentina (6分, 净胜+5)",
-      "right_detail": "Uruguay (2分, 净胜0)"
+      "right_detail": "Cape Verde (3分, 净胜0)"
     },
     {
       "match_number": 87,
@@ -391,9 +391,9 @@
       "left_group": "D",
       "right_group": "G",
       "left_team": "Australia",
-      "right_team": "Iran",
+      "right_team": "Egypt",
       "left_detail": "Australia (4分, 净胜0)",
-      "right_detail": "Iran (2分, 净胜0)"
+      "right_detail": "Egypt (5分, 净胜+2)"
     }
   ],
   "path": [
