@@ -3,6 +3,16 @@
   "third_place": [
     {
       "rank": 1,
+      "group": "K",
+      "team": "Congo DR",
+      "played": "3",
+      "points": "4",
+      "goal_difference": "+1",
+      "goals_for": "4",
+      "status": "晋级区"
+    },
+    {
+      "rank": 2,
       "group": "F",
       "team": "Sweden",
       "played": "3",
@@ -12,7 +22,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "group": "E",
       "team": "Ecuador",
       "played": "3",
@@ -22,7 +32,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "group": "L",
       "team": "Ghana",
       "played": "3",
@@ -32,7 +42,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "group": "B",
       "team": "Bosnia-Herzegovina",
       "played": "3",
@@ -42,7 +52,17 @@
       "status": "晋级区"
     },
     {
-      "rank": 5,
+      "rank": 6,
+      "group": "J",
+      "team": "Algeria",
+      "played": "3",
+      "points": "4",
+      "goal_difference": "-2",
+      "goals_for": "5",
+      "status": "晋级区"
+    },
+    {
+      "rank": 7,
       "group": "D",
       "team": "Paraguay",
       "played": "3",
@@ -52,7 +72,7 @@
       "status": "晋级区"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "group": "I",
       "team": "Senegal",
       "played": "3",
@@ -62,37 +82,27 @@
       "status": "晋级区"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "group": "G",
       "team": "Iran",
       "played": "3",
       "points": "3",
       "goal_difference": "0",
       "goals_for": "3",
-      "status": "晋级区"
+      "status": "淘汰区"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "group": "A",
       "team": "South Korea",
       "played": "3",
       "points": "3",
       "goal_difference": "-1",
       "goals_for": "2",
-      "status": "晋级区"
-    },
-    {
-      "rank": 9,
-      "group": "J",
-      "team": "Algeria",
-      "played": "2",
-      "points": "3",
-      "goal_difference": "-2",
-      "goals_for": "2",
       "status": "淘汰区"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "group": "C",
       "team": "Scotland",
       "played": "3",
@@ -102,23 +112,13 @@
       "status": "淘汰区"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "group": "H",
       "team": "Uruguay",
       "played": "3",
       "points": "2",
       "goal_difference": "-1",
       "goals_for": "3",
-      "status": "淘汰区"
-    },
-    {
-      "rank": 12,
-      "group": "K",
-      "team": "Congo DR",
-      "played": "2",
-      "points": "1",
-      "goal_difference": "-1",
-      "goals_for": "1",
       "status": "淘汰区"
     }
   ],
@@ -251,13 +251,13 @@
       "left_rule": "L1",
       "right_rule": "E3/H3/I3/J3/K3",
       "left_source": "L1",
-      "right_source": "I3",
+      "right_source": "K3",
       "left_group": "L",
-      "right_group": "I",
+      "right_group": "K",
       "left_team": "England",
-      "right_team": "Senegal",
+      "right_team": "Congo DR",
       "left_detail": "England (7分, 净胜+4)",
-      "right_detail": "Senegal (3分, 净胜+2)"
+      "right_detail": "Congo DR (4分, 净胜+1)"
     },
     {
       "match_number": 81,
@@ -285,13 +285,13 @@
       "left_rule": "G1",
       "right_rule": "A3/E3/H3/I3/J3",
       "left_source": "G1",
-      "right_source": "A3",
+      "right_source": "J3",
       "left_group": "G",
-      "right_group": "A",
+      "right_group": "J",
       "left_team": "Belgium",
-      "right_team": "South Korea",
+      "right_team": "Algeria",
       "left_detail": "Belgium (5分, 净胜+4)",
-      "right_detail": "South Korea (3分, 净胜-1)"
+      "right_detail": "Algeria (4分, 净胜-2)"
     },
     {
       "match_number": 83,
@@ -307,7 +307,7 @@
       "right_group": "L",
       "left_team": "Portugal",
       "right_team": "Croatia",
-      "left_detail": "Portugal (4分, 净胜+5)",
+      "left_detail": "Portugal (5分, 净胜+5)",
       "right_detail": "Croatia (6分, 净胜0)"
     },
     {
@@ -325,7 +325,7 @@
       "left_team": "Spain",
       "right_team": "Austria",
       "left_detail": "Spain (7分, 净胜+5)",
-      "right_detail": "Austria (3分, 净胜0)"
+      "right_detail": "Austria (4分, 净胜0)"
     },
     {
       "match_number": 85,
@@ -336,13 +336,13 @@
       "left_rule": "B1",
       "right_rule": "E3/F3/G3/I3/J3",
       "left_source": "B1",
-      "right_source": "G3",
+      "right_source": "I3",
       "left_group": "B",
-      "right_group": "G",
+      "right_group": "I",
       "left_team": "Switzerland",
-      "right_team": "Iran",
+      "right_team": "Senegal",
       "left_detail": "Switzerland (7分, 净胜+4)",
-      "right_detail": "Iran (3分, 净胜0)"
+      "right_detail": "Senegal (3分, 净胜+2)"
     },
     {
       "match_number": 86,
@@ -358,7 +358,7 @@
       "right_group": "H",
       "left_team": "Argentina",
       "right_team": "Cape Verde",
-      "left_detail": "Argentina (6分, 净胜+5)",
+      "left_detail": "Argentina (9分, 净胜+7)",
       "right_detail": "Cape Verde (3分, 净胜0)"
     },
     {
@@ -375,7 +375,7 @@
       "right_group": "L",
       "left_team": "Colombia",
       "right_team": "Ghana",
-      "left_detail": "Colombia (6分, 净胜+3)",
+      "left_detail": "Colombia (7分, 净胜+3)",
       "right_detail": "Ghana (4分, 净胜0)"
     },
     {
