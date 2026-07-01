@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T10:56:07+00:00",
+  "updated_at": "2026-07-01T17:33:25+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -1778,8 +1778,8 @@
     },
     "82": {
       "weather": {
-        "temperature_c": 16.8,
-        "humidity_pct": 65,
+        "temperature_c": 16.1,
+        "humidity_pct": 70,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-07-01T20:00:00Z"
@@ -1804,7 +1804,37 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-01T10:56:07+00:00"
+      "updated_at": "2026-07-01T17:33:25+00:00"
+    },
+    "81": {
+      "weather": {
+        "temperature_c": 17.8,
+        "humidity_pct": 70,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-07-02T00:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1867463v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-07-01T17:33:25+00:00"
     }
   }
 }
