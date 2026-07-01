@@ -1,8 +1,8 @@
 {
   "local_matches": 104,
   "zhibo8_matches": 104,
-  "ok": 103,
+  "ok": 102,
   "diff": 0,
-  "missing_in_zhibo8": 1,
-  "extra_in_zhibo8": 1
+  "missing_in_zhibo8": 2,
+  "extra_in_zhibo8": 2
 }
