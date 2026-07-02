@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T10:15:09+00:00",
+  "updated_at": "2026-07-02T16:30:14+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -1839,7 +1839,7 @@
     "84": {
       "weather": {
         "temperature_c": 23.2,
-        "humidity_pct": 60,
+        "humidity_pct": 61,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-07-02T19:00:00Z"
@@ -1864,7 +1864,67 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-02T10:15:09+00:00"
+      "updated_at": "2026-07-02T16:30:14+00:00"
+    },
+    "83": {
+      "weather": {
+        "temperature_c": 34.1,
+        "humidity_pct": 39,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-07-02T23:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1867465v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-07-02T16:30:14+00:00"
+    },
+    "85": {
+      "weather": {
+        "temperature_c": 13.6,
+        "humidity_pct": 93,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-07-03T03:00:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1867467v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-07-02T16:30:14+00:00"
     }
   }
 }
