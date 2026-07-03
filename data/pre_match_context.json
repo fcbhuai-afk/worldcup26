@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T12:31:36+00:00",
+  "updated_at": "2026-07-03T14:53:21+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -1928,8 +1928,8 @@
     },
     "88": {
       "weather": {
-        "temperature_c": 34.7,
-        "humidity_pct": 41,
+        "temperature_c": 34.2,
+        "humidity_pct": 47,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-07-03T18:00:00Z"
@@ -1954,12 +1954,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-03T12:31:36+00:00"
+      "updated_at": "2026-07-03T14:53:21+00:00"
     },
     "86": {
       "weather": {
-        "temperature_c": 30.0,
-        "humidity_pct": 76,
+        "temperature_c": 29.6,
+        "humidity_pct": 74,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-07-03T22:00:00Z"
@@ -1984,7 +1984,37 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-03T12:31:36+00:00"
+      "updated_at": "2026-07-03T14:53:21+00:00"
+    },
+    "87": {
+      "weather": {
+        "temperature_c": 32.6,
+        "humidity_pct": 44,
+        "source": "Open-Meteo forecast",
+        "observed_or_forecast": "forecast",
+        "for_kickoff_utc": "2026-07-04T01:30:00Z"
+      },
+      "source_links": [
+        {
+          "name": "FIFA Match Center",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
+          "status": "官方页面可能要求浏览器验证，保留人工核验入口"
+        },
+        {
+          "name": "直播吧",
+          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1867469v.htm",
+          "status": "赛前资料核验"
+        }
+      ],
+      "evidence": [],
+      "adjustments": {
+        "home": 0,
+        "away": 0,
+        "draw": 0
+      },
+      "odds": {},
+      "underdog_defensive_evidence": false,
+      "updated_at": "2026-07-03T14:53:21+00:00"
     }
   }
 }
