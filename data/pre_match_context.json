@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T17:49:45+00:00",
+  "updated_at": "2026-07-03T18:53:35+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -1958,8 +1958,8 @@
     },
     "86": {
       "weather": {
-        "temperature_c": 26.9,
-        "humidity_pct": 87,
+        "temperature_c": 29.8,
+        "humidity_pct": 75,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-07-03T22:00:00Z"
@@ -1984,12 +1984,12 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-03T17:49:45+00:00"
+      "updated_at": "2026-07-03T18:53:35+00:00"
     },
     "87": {
       "weather": {
-        "temperature_c": 32.7,
-        "humidity_pct": 47,
+        "temperature_c": 32.9,
+        "humidity_pct": 45,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
         "for_kickoff_utc": "2026-07-04T01:30:00Z"
@@ -2014,7 +2014,7 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-03T17:49:45+00:00"
+      "updated_at": "2026-07-03T18:53:35+00:00"
     }
   }
 }
