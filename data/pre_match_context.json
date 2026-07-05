@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05T21:08:47+00:00",
+  "updated_at": "2026-07-05T23:16:00+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -2119,11 +2119,6 @@
           "name": "FIFA Match Center",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center",
           "status": "官方页面可能要求浏览器验证，保留人工核验入口"
-        },
-        {
-          "name": "直播吧",
-          "url": "https://www.zhibo8.cc/zhibo/zuqiu/2026/match1867442v.htm",
-          "status": "赛前资料核验"
         }
       ],
       "evidence": [],
@@ -2134,7 +2129,7 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-05T21:08:47+00:00"
+      "updated_at": "2026-07-05T23:16:00+00:00"
     }
   }
 }
