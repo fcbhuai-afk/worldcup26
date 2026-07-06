@@ -113,6 +113,60 @@ def beijing_from_timestamp(value):
     return datetime.fromtimestamp(int(value), timezone.utc).astimezone(BEIJING).isoformat(timespec="minutes")
 
 
+def parse_iso(value):
+    if not value:
+        return None
+    return datetime.fromisoformat(value)
+
+
+def knockout_round_key(match):
+    stage = match.get("stage", "")
+    number = int(match.get("match_number") or 0)
+    if stage == "round-of-32" or 73 <= number <= 88:
+        return "1/16"
+    if stage == "round-of-16" or 89 <= number <= 96:
+        return "1/8"
+    if stage == "quarter-finals" or 97 <= number <= 100:
+        return "1/4"
+    if stage == "semi-finals" or 101 <= number <= 102:
+        return "半决赛"
+    if stage == "third-place" or number == 103:
+        return "季军"
+    if stage == "final" or number == 104:
+        return "决赛"
+    return ""
+
+
+def match_zhibo_round(row, key):
+    rounds = row.get("rounds", "")
+    if not key:
+        return False
+    if key == "季军":
+        return "季军" in rounds
+    return key in rounds
+
+
+def fuzzy_knockout_match(match, zhibo_rows, used_ids):
+    key = knockout_round_key(match)
+    kickoff = parse_iso(match.get("kickoff_beijing", ""))
+    if not key or not kickoff:
+        return None
+    candidates = []
+    for row in zhibo_rows:
+        if row.get("zhibo8_match_id") in used_ids:
+            continue
+        z_time = parse_iso(row.get("kickoff_beijing", ""))
+        if not z_time or not match_zhibo_round(row, key):
+            continue
+        delta_minutes = abs((z_time - kickoff).total_seconds()) / 60
+        if delta_minutes <= 120:
+            candidates.append((delta_minutes, row))
+    if not candidates:
+        return None
+    candidates.sort(key=lambda item: (item[0], item[1].get("kickoff_beijing", "")))
+    return candidates[0][1]
+
+
 def flatten_zhibo8():
     payload = load_zhibo8_payload()
     rows = []
@@ -159,6 +213,8 @@ def compare():
             z = zhibo_by_key.get((match["kickoff_beijing"], home_zh, away_zh))
         if not z and len(zhibo_by_time.get(match["kickoff_beijing"], [])) == 1:
             z = zhibo_by_time[match["kickoff_beijing"]][0]
+        if not z and match.get("stage") != "group-stage":
+            z = fuzzy_knockout_match(match, zhibo_rows, used_zhibo8_ids)
         if z:
             used_zhibo8_ids.add(z["zhibo8_match_id"])
             expected_score = ""
