@@ -110,13 +110,24 @@ function cleanCity(city) {
 }
 
 function scoreFor(match) {
+  if (match.zhibo8?.score && match.zhibo8.score !== "-") return match.zhibo8.score;
   if (match.completed === "True") return `${match.home_score}-${match.away_score}`;
   return "VS";
 }
 
 function statusText(match) {
+  if (match.zhibo8?.state_cn) return match.zhibo8.state_cn;
   if (match.completed === "True") return "完赛";
   return match.status_state === "in" ? "进行中" : "未赛";
+}
+
+function displayScores(match) {
+  if (match.zhibo8?.score && match.zhibo8.score !== "-") {
+    const parts = match.zhibo8.score.split("-");
+    if (parts.length === 2) return { home: parts[0], away: parts[1] };
+  }
+  if (match.completed === "True") return { home: match.home_score, away: match.away_score };
+  return { home: "", away: "" };
 }
 
 function sourceScore(match) {
@@ -152,6 +163,8 @@ function parsePreMatchSources(match) {
 }
 
 function displayTeam(match, side) {
+  const displayKey = side === "home" ? "display_home_team" : "display_away_team";
+  if (match[displayKey]) return match[displayKey];
   const knockout = knockoutDisplayMap.get(String(match.match_number));
   const key = side === "home" ? "left_team" : "right_team";
   const fallback = side === "home" ? match.home_team : match.away_team;
@@ -319,7 +332,8 @@ function jumpToCurrentMatch(matches) {
 
 function renderMatchCard(match) {
   const scores = sourceScore(match);
-  const statusClass = match.completed === "True" ? "post" : "pre";
+  const shownScores = displayScores(match);
+  const statusClass = match.completed === "True" || match.zhibo8?.is_finish === "1" ? "post" : "pre";
   const checkStatus = match.crosscheck?.check_status || "待补充";
   const checkLabel = checkStatus === "OK" ? "核对通过" : checkStatus;
   const homeZh = match.crosscheck?.home_team_zh_expected || "";
@@ -353,11 +367,11 @@ function renderMatchCard(match) {
       <div class="teams">
         <div class="team-row">
           ${renderTeamName(match, "home")}
-          <span class="score">${match.completed === "True" ? match.home_score : ""}</span>
+          <span class="score">${shownScores.home}</span>
         </div>
         <div class="team-row">
           ${renderTeamName(match, "away")}
-          <span class="score">${match.completed === "True" ? match.away_score : ""}</span>
+          <span class="score">${shownScores.away}</span>
         </div>
         <div class="match-context">
           ${match.stadium}
