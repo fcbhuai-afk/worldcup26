@@ -1,17 +1,17 @@
 ﻿match_number,round,kickoff_beijing,stadium,host_city,left_team,right_team
-89,16强,2026-07-05T05:00+08:00,Lincoln Financial Field,philadelphia,73胜者,75胜者
-90,16强,2026-07-05T01:00+08:00,NRG Stadium,houston,74胜者,77胜者
-91,16强,2026-07-06T04:00+08:00,MetLife Stadium,new-york,76胜者,78胜者
-92,16强,2026-07-06T08:00+08:00,Estadio Azteca,mexico-city,79胜者,80胜者
-93,16强,2026-07-07T03:00+08:00,AT&T Stadium,dallas,83胜者,84胜者
-94,16强,2026-07-07T08:00+08:00,Lumen Field,seattle,81胜者,82胜者
-95,16强,2026-07-08T00:00+08:00,Mercedes-Benz Stadium,atlanta,86胜者,88胜者
-96,16强,2026-07-08T04:00+08:00,BC Place,vancouver,85胜者,87胜者
-97,1/4决赛,2026-07-10T04:00+08:00,Gillette Stadium,boston,89胜者,90胜者
-98,1/4决赛,2026-07-11T03:00+08:00,SoFi Stadium,los-angeles,93胜者,94胜者
-99,1/4决赛,2026-07-12T05:00+08:00,Hard Rock Stadium,miami,91胜者,92胜者
-100,1/4决赛,2026-07-12T09:00+08:00,Arrowhead Stadium,kansas-city,95胜者,96胜者
-101,半决赛,2026-07-15T03:00+08:00,AT&T Stadium,dallas,97胜者,98胜者
-102,半决赛,2026-07-16T03:00+08:00,Mercedes-Benz Stadium,atlanta,99胜者,100胜者
-103,三四名决赛,2026-07-19T05:00+08:00,Hard Rock Stadium,miami,101负者,102负者
-104,决赛,2026-07-20T03:00+08:00,MetLife Stadium,new-york,101胜者,102胜者
+89,16强,2026-07-05T05:00+08:00,Lincoln Financial Field,philadelphia,73胜者：South Africa / Canada,75胜者：Germany / Sweden
+90,16强,2026-07-05T01:00+08:00,NRG Stadium,houston,74胜者：Brazil / Japan,77胜者：France / Paraguay
+91,16强,2026-07-06T04:00+08:00,MetLife Stadium,new-york,76胜者：Netherlands / Morocco,78胜者：Ivory Coast / Norway
+92,16强,2026-07-06T08:00+08:00,Estadio Azteca,mexico-city,79胜者：Mexico / Ecuador,80胜者：England / Congo DR
+93,16强,2026-07-07T03:00+08:00,AT&T Stadium,dallas,83胜者：Portugal / Croatia,84胜者：Spain / Austria
+94,16强,2026-07-07T08:00+08:00,Lumen Field,seattle,81胜者：United States / Bosnia-Herzegovina,82胜者：Belgium / Algeria
+95,16强,2026-07-08T00:00+08:00,Mercedes-Benz Stadium,atlanta,86胜者：Argentina / Cape Verde,88胜者：Australia / Egypt
+96,16强,2026-07-08T04:00+08:00,BC Place,vancouver,85胜者：Switzerland / Senegal,87胜者：Colombia / Ghana
+97,1/4决赛,2026-07-10T04:00+08:00,Gillette Stadium,boston,89胜者：South Africa / Canada / Germany / Sweden,90胜者：Brazil / Japan / France / Paraguay
+98,1/4决赛,2026-07-11T03:00+08:00,SoFi Stadium,los-angeles,93胜者：Portugal / Croatia / Spain / Austria,94胜者：United States / Bosnia-Herzegovina / Belgium / Algeria
+99,1/4决赛,2026-07-12T05:00+08:00,Hard Rock Stadium,miami,91胜者：Netherlands / Morocco / Ivory Coast / Norway,92胜者：Mexico / Ecuador / England / Congo DR
+100,1/4决赛,2026-07-12T09:00+08:00,Arrowhead Stadium,kansas-city,95胜者：Argentina / Cape Verde / Australia / Egypt,96胜者：Switzerland / Senegal / Colombia / Ghana
+101,半决赛,2026-07-15T03:00+08:00,AT&T Stadium,dallas,97胜者：8队候选,98胜者：8队候选
+102,半决赛,2026-07-16T03:00+08:00,Mercedes-Benz Stadium,atlanta,99胜者：8队候选,100胜者：8队候选
+103,三四名决赛,2026-07-19T05:00+08:00,Hard Rock Stadium,miami,101负者：16队候选,102负者：16队候选
+104,决赛,2026-07-20T03:00+08:00,MetLife Stadium,new-york,101胜者：16队候选,102胜者：16队候选
