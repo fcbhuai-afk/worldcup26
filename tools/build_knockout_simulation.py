@@ -64,6 +64,22 @@ def to_int(value):
         return 0
 
 
+def has_score(match):
+    return str(match.get("completed", "")).lower() == "true" and match.get("home_score") != "" and match.get("away_score") != ""
+
+
+def score_winner(match, left_team, right_team, want="winner"):
+    if not has_score(match):
+        return ""
+    home_score = to_int(match.get("home_score"))
+    away_score = to_int(match.get("away_score"))
+    if home_score == away_score:
+        return ""
+    if want == "loser":
+        return right_team if home_score > away_score else left_team
+    return left_team if home_score > away_score else right_team
+
+
 def row_sort_key(row):
     return (
         -to_int(row["points"]),
@@ -127,6 +143,59 @@ def resolve_slot(token, by_group, available_thirds, used_groups):
     return resolve_direct(token, by_group)
 
 
+def reference_from_token(token):
+    digits = "".join(ch for ch in token if ch.isdigit())
+    if not digits:
+        return None, "winner"
+    return int(digits), "loser" if "负" in token else "winner"
+
+
+def candidate_teams(match_number, resolved_matches):
+    match = resolved_matches.get(match_number)
+    if not match:
+        return []
+    winner = match.get("winner_team")
+    if winner:
+        return [winner]
+    teams = []
+    for key in ("left_candidates", "right_candidates"):
+        value = match.get(key, [])
+        if isinstance(value, list):
+            teams.extend(value)
+    if not teams:
+        for key in ("left_team", "right_team"):
+            value = match.get(key, "")
+            if value:
+                teams.append(value)
+    deduped = []
+    for team in teams:
+        if team and team not in deduped:
+            deduped.append(team)
+    return deduped
+
+
+def candidate_label(token, candidates):
+    if not candidates:
+        return token
+    if len(candidates) <= 4:
+        return f"{token}：" + " / ".join(candidates)
+    return f"{token}：{len(candidates)}队候选"
+
+
+def resolve_reference_token(token, resolved_matches):
+    match_number, want = reference_from_token(token)
+    if match_number is None:
+        return token, [], ""
+    source = resolved_matches.get(match_number)
+    if not source:
+        return token, [], ""
+    team = source.get("loser_team" if want == "loser" else "winner_team")
+    if team:
+        return team, [team], f"{token}已确定"
+    candidates = candidate_teams(match_number, resolved_matches)
+    return candidate_label(token, candidates), candidates, f"{token}候选"
+
+
 def main():
     standings = read_csv("standings.csv")
     matches = {to_int(row["match_number"]): row for row in read_csv("matches.csv")}
@@ -135,6 +204,7 @@ def main():
 
     used_third_groups = set()
     round32_rows = []
+    resolved_matches = {}
     for number, left_token, right_token in ROUND32:
         left_team, left_group, left_source, left_detail = resolve_slot(
             left_token, by_group, available_thirds, used_third_groups
@@ -162,6 +232,16 @@ def main():
                 "right_detail": right_detail,
             }
         )
+        winner_team = score_winner(match, left_team, right_team, "winner")
+        loser_team = score_winner(match, left_team, right_team, "loser")
+        resolved_matches[number] = {
+            "left_team": left_team,
+            "right_team": right_team,
+            "left_candidates": [left_team] if left_team else [],
+            "right_candidates": [right_team] if right_team else [],
+            "winner_team": winner_team,
+            "loser_team": loser_team,
+        }
 
     path_rows = []
     for number, left, right in BRACKET_PATH:
@@ -176,6 +256,10 @@ def main():
             round_name = "三四名决赛"
         else:
             round_name = "决赛"
+        left_team, left_candidates, left_source = resolve_reference_token(left, resolved_matches)
+        right_team, right_candidates, right_source = resolve_reference_token(right, resolved_matches)
+        winner_team = score_winner(match, left_team, right_team, "winner")
+        loser_team = score_winner(match, left_team, right_team, "loser")
         path_rows.append(
             {
                 "match_number": number,
@@ -183,10 +267,20 @@ def main():
                 "kickoff_beijing": match.get("kickoff_beijing", ""),
                 "stadium": match.get("stadium", ""),
                 "host_city": match.get("host_city", ""),
-                "left_team": left,
-                "right_team": right,
+                "left_team": left_team,
+                "right_team": right_team,
+                "left_source": left_source,
+                "right_source": right_source,
             }
         )
+        resolved_matches[number] = {
+            "left_team": left_team,
+            "right_team": right_team,
+            "left_candidates": left_candidates,
+            "right_candidates": right_candidates,
+            "winner_team": winner_team,
+            "loser_team": loser_team,
+        }
 
     third_rows = []
     advancing_groups = set(available_thirds)
