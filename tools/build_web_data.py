@@ -42,6 +42,12 @@ def main():
         match["crosscheck"] = check
         match["zhibo8"] = zhibo8_by_id.get(check.get("zhibo8_match_id", ""), {})
         match["analysis"] = analysis_by_match.get(match["match_number"], {})
+        if match.get("stage") != "group-stage" and check.get("check_status") == "OK":
+            match["display_home_team"] = check.get("zhibo8_home_team") or match.get("home_team", "")
+            match["display_away_team"] = check.get("zhibo8_away_team") or match.get("away_team", "")
+        else:
+            match["display_home_team"] = match.get("home_team", "")
+            match["display_away_team"] = match.get("away_team", "")
 
     standings_by_group = defaultdict(list)
     for row in standings:
