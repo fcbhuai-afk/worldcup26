@@ -403,8 +403,10 @@
       "kickoff_beijing": "2026-07-05T05:00+08:00",
       "stadium": "Lincoln Financial Field",
       "host_city": "philadelphia",
-      "left_team": "73胜者",
-      "right_team": "75胜者"
+      "left_team": "73胜者：South Africa / Canada",
+      "right_team": "75胜者：Germany / Sweden",
+      "left_source": "73胜者候选",
+      "right_source": "75胜者候选"
     },
     {
       "match_number": 90,
@@ -412,8 +414,10 @@
       "kickoff_beijing": "2026-07-05T01:00+08:00",
       "stadium": "NRG Stadium",
       "host_city": "houston",
-      "left_team": "74胜者",
-      "right_team": "77胜者"
+      "left_team": "74胜者：Brazil / Japan",
+      "right_team": "77胜者：France / Paraguay",
+      "left_source": "74胜者候选",
+      "right_source": "77胜者候选"
     },
     {
       "match_number": 91,
@@ -421,8 +425,10 @@
       "kickoff_beijing": "2026-07-06T04:00+08:00",
       "stadium": "MetLife Stadium",
       "host_city": "new-york",
-      "left_team": "76胜者",
-      "right_team": "78胜者"
+      "left_team": "76胜者：Netherlands / Morocco",
+      "right_team": "78胜者：Ivory Coast / Norway",
+      "left_source": "76胜者候选",
+      "right_source": "78胜者候选"
     },
     {
       "match_number": 92,
@@ -430,8 +436,10 @@
       "kickoff_beijing": "2026-07-06T08:00+08:00",
       "stadium": "Estadio Azteca",
       "host_city": "mexico-city",
-      "left_team": "79胜者",
-      "right_team": "80胜者"
+      "left_team": "79胜者：Mexico / Ecuador",
+      "right_team": "80胜者：England / Congo DR",
+      "left_source": "79胜者候选",
+      "right_source": "80胜者候选"
     },
     {
       "match_number": 93,
@@ -439,8 +447,10 @@
       "kickoff_beijing": "2026-07-07T03:00+08:00",
       "stadium": "AT&T Stadium",
       "host_city": "dallas",
-      "left_team": "83胜者",
-      "right_team": "84胜者"
+      "left_team": "83胜者：Portugal / Croatia",
+      "right_team": "84胜者：Spain / Austria",
+      "left_source": "83胜者候选",
+      "right_source": "84胜者候选"
     },
     {
       "match_number": 94,
@@ -448,8 +458,10 @@
       "kickoff_beijing": "2026-07-07T08:00+08:00",
       "stadium": "Lumen Field",
       "host_city": "seattle",
-      "left_team": "81胜者",
-      "right_team": "82胜者"
+      "left_team": "81胜者：United States / Bosnia-Herzegovina",
+      "right_team": "82胜者：Belgium / Algeria",
+      "left_source": "81胜者候选",
+      "right_source": "82胜者候选"
     },
     {
       "match_number": 95,
@@ -457,8 +469,10 @@
       "kickoff_beijing": "2026-07-08T00:00+08:00",
       "stadium": "Mercedes-Benz Stadium",
       "host_city": "atlanta",
-      "left_team": "86胜者",
-      "right_team": "88胜者"
+      "left_team": "86胜者：Argentina / Cape Verde",
+      "right_team": "88胜者：Australia / Egypt",
+      "left_source": "86胜者候选",
+      "right_source": "88胜者候选"
     },
     {
       "match_number": 96,
@@ -466,8 +480,10 @@
       "kickoff_beijing": "2026-07-08T04:00+08:00",
       "stadium": "BC Place",
       "host_city": "vancouver",
-      "left_team": "85胜者",
-      "right_team": "87胜者"
+      "left_team": "85胜者：Switzerland / Senegal",
+      "right_team": "87胜者：Colombia / Ghana",
+      "left_source": "85胜者候选",
+      "right_source": "87胜者候选"
     },
     {
       "match_number": 97,
@@ -475,8 +491,10 @@
       "kickoff_beijing": "2026-07-10T04:00+08:00",
       "stadium": "Gillette Stadium",
       "host_city": "boston",
-      "left_team": "89胜者",
-      "right_team": "90胜者"
+      "left_team": "89胜者：South Africa / Canada / Germany / Sweden",
+      "right_team": "90胜者：Brazil / Japan / France / Paraguay",
+      "left_source": "89胜者候选",
+      "right_source": "90胜者候选"
     },
     {
       "match_number": 98,
@@ -484,8 +502,10 @@
       "kickoff_beijing": "2026-07-11T03:00+08:00",
       "stadium": "SoFi Stadium",
       "host_city": "los-angeles",
-      "left_team": "93胜者",
-      "right_team": "94胜者"
+      "left_team": "93胜者：Portugal / Croatia / Spain / Austria",
+      "right_team": "94胜者：United States / Bosnia-Herzegovina / Belgium / Algeria",
+      "left_source": "93胜者候选",
+      "right_source": "94胜者候选"
     },
     {
       "match_number": 99,
@@ -493,8 +513,10 @@
       "kickoff_beijing": "2026-07-12T05:00+08:00",
       "stadium": "Hard Rock Stadium",
       "host_city": "miami",
-      "left_team": "91胜者",
-      "right_team": "92胜者"
+      "left_team": "91胜者：Netherlands / Morocco / Ivory Coast / Norway",
+      "right_team": "92胜者：Mexico / Ecuador / England / Congo DR",
+      "left_source": "91胜者候选",
+      "right_source": "92胜者候选"
     },
     {
       "match_number": 100,
@@ -502,8 +524,10 @@
       "kickoff_beijing": "2026-07-12T09:00+08:00",
       "stadium": "Arrowhead Stadium",
       "host_city": "kansas-city",
-      "left_team": "95胜者",
-      "right_team": "96胜者"
+      "left_team": "95胜者：Argentina / Cape Verde / Australia / Egypt",
+      "right_team": "96胜者：Switzerland / Senegal / Colombia / Ghana",
+      "left_source": "95胜者候选",
+      "right_source": "96胜者候选"
     },
     {
       "match_number": 101,
@@ -511,8 +535,10 @@
       "kickoff_beijing": "2026-07-15T03:00+08:00",
       "stadium": "AT&T Stadium",
       "host_city": "dallas",
-      "left_team": "97胜者",
-      "right_team": "98胜者"
+      "left_team": "97胜者：8队候选",
+      "right_team": "98胜者：8队候选",
+      "left_source": "97胜者候选",
+      "right_source": "98胜者候选"
     },
     {
       "match_number": 102,
@@ -520,8 +546,10 @@
       "kickoff_beijing": "2026-07-16T03:00+08:00",
       "stadium": "Mercedes-Benz Stadium",
       "host_city": "atlanta",
-      "left_team": "99胜者",
-      "right_team": "100胜者"
+      "left_team": "99胜者：8队候选",
+      "right_team": "100胜者：8队候选",
+      "left_source": "99胜者候选",
+      "right_source": "100胜者候选"
     },
     {
       "match_number": 103,
@@ -529,8 +557,10 @@
       "kickoff_beijing": "2026-07-19T05:00+08:00",
       "stadium": "Hard Rock Stadium",
       "host_city": "miami",
-      "left_team": "101负者",
-      "right_team": "102负者"
+      "left_team": "101负者：16队候选",
+      "right_team": "102负者：16队候选",
+      "left_source": "101负者候选",
+      "right_source": "102负者候选"
     },
     {
       "match_number": 104,
@@ -538,8 +568,10 @@
       "kickoff_beijing": "2026-07-20T03:00+08:00",
       "stadium": "MetLife Stadium",
       "host_city": "new-york",
-      "left_team": "101胜者",
-      "right_team": "102胜者"
+      "left_team": "101胜者：16队候选",
+      "right_team": "102胜者：16队候选",
+      "left_source": "101胜者候选",
+      "right_source": "102胜者候选"
     }
   ]
 }
