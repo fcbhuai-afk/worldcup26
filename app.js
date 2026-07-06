@@ -1,5 +1,11 @@
 const data = window.WC26_DATA;
 const HGA_ODDS_URL = "https://www.hga038.com";
+const knockoutDisplayMap = new Map(
+  [
+    ...(data.knockout_simulation?.round32 || []),
+    ...(data.knockout_simulation?.path || []),
+  ].map((match) => [String(match.match_number), match])
+);
 const state = {
   stage: "all",
   group: "all",
@@ -145,6 +151,13 @@ function parsePreMatchSources(match) {
   }
 }
 
+function displayTeam(match, side) {
+  const knockout = knockoutDisplayMap.get(String(match.match_number));
+  const key = side === "home" ? "left_team" : "right_team";
+  const fallback = side === "home" ? match.home_team : match.away_team;
+  return knockout?.[key] || fallback;
+}
+
 function teamUrl(match, side) {
   const zhibo8 = match.zhibo8 || {};
   const team = side === "home" ? zhibo8.home_team_zh : zhibo8.away_team_zh;
@@ -154,7 +167,7 @@ function teamUrl(match, side) {
 }
 
 function renderTeamName(match, side) {
-  const en = side === "home" ? match.home_team : match.away_team;
+  const en = displayTeam(match, side);
   const zh = side === "home" ? match.crosscheck?.home_team_zh_expected : match.crosscheck?.away_team_zh_expected;
   const url = teamUrl(match, side);
   const label = `${en}${zh ? ` / ${zh}` : ""}`;
@@ -245,6 +258,8 @@ function matchPassesFilters(match) {
   if (state.status !== "all" && match.status_state !== state.status) return false;
   if (!state.query) return true;
   const haystack = [
+    displayTeam(match, "home"),
+    displayTeam(match, "away"),
     match.home_team,
     match.away_team,
     match.crosscheck?.home_team_zh_expected,
@@ -309,6 +324,8 @@ function renderMatchCard(match) {
   const checkLabel = checkStatus === "OK" ? "核对通过" : checkStatus;
   const homeZh = match.crosscheck?.home_team_zh_expected || "";
   const awayZh = match.crosscheck?.away_team_zh_expected || "";
+  const homeDisplay = displayTeam(match, "home");
+  const awayDisplay = displayTeam(match, "away");
   const compareNote = match.time_discrepancy_note
     ? `<div class="compare-line"><span>时间说明</span><strong>${match.time_discrepancy_note}</strong></div>`
     : "";
@@ -376,9 +393,9 @@ function renderMatchCard(match) {
             <span style="left:${leanPercent(lean)}%"></span>
           </div>
           <div class="lean-caption">
-            <span>${match.home_team}</span>
+            <span>${homeDisplay}</span>
             <b>${match.analysis?.lean_label || "待定"} · 置信度 ${match.analysis?.confidence || "低"}</b>
-            <span>${match.away_team}</span>
+            <span>${awayDisplay}</span>
           </div>
           <div class="probability-grid" aria-label="赛果概率">
             <div><span>主胜</span><strong>${homeWin}%</strong></div>
@@ -389,7 +406,7 @@ function renderMatchCard(match) {
         <div class="compare-line"><span>主源</span><strong>${scoreFor(match)} · ${match.status}</strong></div>
         <div class="compare-line"><span>直播吧</span><strong>${scores.zhibo8} · ${match.zhibo8?.state_cn || "待补充"}</strong></div>
         <div class="compare-line"><span>比赛ID</span><strong>ESPN ${match.espn_event_id || "-"} / 直播吧 ${match.crosscheck?.zhibo8_match_id || "-"}</strong></div>
-        <div class="compare-line"><span>球队资料</span><strong>${homeTeamUrl ? `<a href="${homeTeamUrl}" target="_blank" rel="noreferrer">${homeZh || match.home_team}</a>` : "待补充"} · ${awayTeamUrl ? `<a href="${awayTeamUrl}" target="_blank" rel="noreferrer">${awayZh || match.away_team}</a>` : "待补充"}</strong></div>
+        <div class="compare-line"><span>球队资料</span><strong>${homeTeamUrl ? `<a href="${homeTeamUrl}" target="_blank" rel="noreferrer">${homeZh || homeDisplay}</a>` : homeDisplay} · ${awayTeamUrl ? `<a href="${awayTeamUrl}" target="_blank" rel="noreferrer">${awayZh || awayDisplay}</a>` : awayDisplay}</strong></div>
         <div class="compare-line"><span>强度评分</span><strong>${match.analysis?.home_rating || "-"} : ${match.analysis?.away_rating || "-"}</strong></div>
         <div class="compare-line"><span>环境</span><strong>${cleanCity(match.host_city)} · 当地 ${localTime || "待补充"} · 海拔 ${venue.elevation || "待补充"}</strong></div>
         ${match.analysis?.environment_note ? `<div class="compare-line"><span>热负荷</span><strong>${match.analysis.environment_note}</strong></div>` : ""}
