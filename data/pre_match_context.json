@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10T09:52:32+00:00",
+  "updated_at": "2026-07-10T12:16:05+00:00",
   "matches": {
     "29": {
       "source_links": [
@@ -2283,7 +2283,7 @@
     },
     "98": {
       "weather": {
-        "temperature_c": 28.1,
+        "temperature_c": 27.5,
         "humidity_pct": 51,
         "source": "Open-Meteo forecast",
         "observed_or_forecast": "forecast",
@@ -2309,7 +2309,7 @@
       },
       "odds": {},
       "underdog_defensive_evidence": false,
-      "updated_at": "2026-07-10T09:52:32+00:00"
+      "updated_at": "2026-07-10T12:16:05+00:00"
     }
   }
 }
